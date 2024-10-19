@@ -58,8 +58,8 @@ document.querySelectorAll('.option').forEach(function(option) {
 // Hàm điều hướng dựa trên giá trị của tùy chọn
 function navigateToUrl(optionValue) {
     if (optionValue === 'option1') {
-        window.location.href = 'http://127.0.0.1:8000/register';
+        window.location.href = 'http://127.0.0.1:8000/forgot-password';
     } else if (optionValue === 'option2') {
-        window.location.href = 'http://127.0.0.1:8000/register/vn';
+        window.location.href = 'http://127.0.0.1:8000/forgot-password/vn';
     }
 }
