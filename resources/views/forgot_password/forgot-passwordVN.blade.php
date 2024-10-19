@@ -1,10 +1,25 @@
 @extends('layout.account')
 @section('title','Quên mật khẩu')
 @section('country')
-    <select id="options-forgot" name="options" onchange="navigateToUrl()">
-        <option value="option1">ENG</option>
-        <option value="option2">VIE</option>
-    </select>
+    <div class="custom-select">
+        <div class="selected-option" id="selected-text">
+            <img src="https://app.testcenter.vn/images/lang/uk_flag.png" alt="ENG" class="option-img">
+            <span>ENG</span>
+            <span class="arrow">&#9662;</span>
+        </div>
+        <div class="option-list" style="display: none;">
+            <div class="option" data-value="option1">
+                <img src="https://app.testcenter.vn/images/lang/uk_flag.png" alt="ENG" class="option-img">
+                <span>ENG</span>
+            </div>
+            <div class="option" data-value="option2">
+                <img src="https://app.testcenter.vn/images/lang/vietnam_flag.jpeg" alt="VIE" class="option-img">
+                <span>VIE</span>
+            </div>
+        </div>
+    </div>
+    <script src="{{asset('js/translate-vn-en/forgot-password.js')}}">
+    </script>
 @endsection
 @section('form')
     <div class="note-pass w-100 text-left">Nhập email mà bạn đã sử dụng để đăng kí tài khoản, hệ thống sẽ gửi lại thông tin để cập nhật mật khẩu.</div>
@@ -19,5 +34,3 @@
         <p>Bạn đã nhớ lại <a href="{{route('LoginVN')}}"><b>Đăng nhập</b></a></p>
     </div>
 @endsection
-<script src="{{asset('js/translate-vn-en/forgot-password.js')}}">
-</script>

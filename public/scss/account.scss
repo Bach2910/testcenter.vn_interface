@@ -1,22 +1,26 @@
 @import "variables";
+
 .register {
-  width: 100%;
-  justify-content: space-between;
+    width: 100%;
 }
+
 *, :after, :before {
     box-sizing: border-box;
 }
+
 .left-div {
-  width: 50%;
-  padding-right: 40px;
+    width: 50%;
+    padding-right: 40px;
 }
+
 .right-div {
-  width: 50%;
-  margin: auto;
+    width: 50%;
     border: 2px solid #fff; /* 2px thick, solid white border */
-    padding: 10px;          /* Add some space inside the border */
-    border-radius: 8px;      /* Optional: Rounded corners for the border */
+    padding: 10px; /* Add some space inside the border */
+    border-radius: 8px; /* Optional: Rounded corners for the border */
+
 }
+
 .login-line {
     padding: 10px;
     display: inline-block;
@@ -24,148 +28,269 @@
     top: .7rem;
     background: #fff;
     width: 100%;
+
+    hr {
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+    }
 }
+
 .right-div form {
-  width: 100%;
-  height: 100%;
-  align-items: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .topcv-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f8ff; /* Tùy chỉnh màu nền */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 100%; /* Điều chỉnh chiều rộng của logo */
+        }
+
+        .topcv-logo img {
+            width: 50px; /* Giảm kích thước logo */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .topcv-login-button {
+            background-color: #2C4A9F;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; /* Điều chỉnh chiều rộng của button */
+            text-align: center;
+            margin: 30px 0 30px 0;
+        }
+
+        .topcv-login-button:hover {
+            background-color: #1e3a6f; /* Màu khi hover */
+        }
+
+        .or-separator {
+            font-size: 14px;
+            color: #888;
+            margin: 30px 0 30px 0;
+        }
+
+        .register-link {
+            font-size: 14px;
+            color: #333;
+            margin: 30px 0 30px 0;
+
+            .register-link a {
+                color: #2C4A9F;
+                text-decoration: none;
+            }
+
+            .register-link a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 .right-div img {
-  width: auto;
-  height: 100px;
-  align-items: center;
+    width: auto;
+    height: 100px;
+    align-items: center;
 }
 
 .right-div .country {
-  margin-bottom: 100px;
-  text-align: end;
-}
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: right; /* Đẩy select sang bên phải */
+    .custom-select {
+        position: relative;
+        width: 120px;
+        cursor: pointer;
+    }
 
-.right-div .country select {
-  width: 100px;
-  border-radius: 20px;
-  padding: 5px;
+    .selected-option {
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        padding: 10px 5px 5px 10px;
+        background-color: white;
+        border: 1px solid #ccc;
+        justify-content: space-around;
+        align-items: center;
+
+        .arrow {
+            font-size: 14px;
+            color: #333;
+            transition: transform 0.3s; /* Thêm hiệu ứng cho mũi tên */
+        }
+    }
+
+    .option-list {
+        display: none;
+        position: absolute;
+        width: 100%;
+        border-radius: 10px;
+        background-color: white;
+        border: 1px solid #2C4A9F;
+        z-index: 100;
+        justify-content: space-around;
+
+    }
+
+    .option {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+    }
+
+    .option-img {
+        width: 1.75rem !important;
+        height: 1.25rem !important;
+        margin-right: 1rem;
+    }
+
+    .option:hover {
+        background-color: #f0f0f0;
+    }
 }
 
 .form-icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .form-control {
-  padding-left: 40px;
+    padding-left: 40px;
 }
 
 .name {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .phone {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .company {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .email {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .password-again-container {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .password-container {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .right-div p {
-  width: 100%;
-  max-width: 300px;
-  color: #718096;
-  font-size: 13px;
+    width: 100%;
+    max-width: 300px;
+    color: #718096;
+    font-size: 13px;
 }
 
 input[type="password"], input[type="text"], input[type="email"] {
-  width: 100%;
-  font-size: 16px;
+    width: 100%;
+    font-size: 16px;
 }
 
 .eye-icon {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .right-div .btn-primary {
-  position: relative;
-  width: 100%;
-  background-color: #1a4c9d;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    background-color: #1a4c9d;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .carousel {
-  background-color: rgba(240, 246, 255, 1);
-  width: 100%;
-  height: 100%;
+    background-color: rgba(240, 246, 255, 1);
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 .carousel-item {
-  padding: 40px;
-
+    padding: 40px;
 }
 
 .carousel-item h2 {
-  color: #003b74;
-  text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+    color: #05216f;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
-
 .carousel-item p {
-  color: #333;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    text-align: justify;
 }
 
 .carousel-item img {
-  width: 100%;
-  height: 50%;
-  align-items: center;
+    width: 100%;
+    height: 50%;
 }
 
 .carousel .carousel-indicators button {
-  background-color: #1a4c9d;
+    background-color: #1a4c9d;
 }
 
 .note {
-  font-weight: 700;
+    font-weight: 700;
+    margin-left: 200px;
 }
 
 .forgot {
     align-items: start;
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
-hr{
+
+hr {
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, .1);
-        box-sizing: content-box;
+    box-sizing: content-box;
     display: block;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
@@ -174,8 +299,10 @@ hr{
     unicode-bidi: isolate;
     margin-bottom: 10px;
 }
-.btn-topcv{
+
+.btn-topcv {
     width: 100%;
+    height: 100px;
     background: #f0f6ff;
     border-radius: .24rem;
     text-align: center;
@@ -188,7 +315,8 @@ hr{
     transition: background-color .2s ease-in-out 0s, border-color .2s ease-in-out 0s;
     color: #2c4a9f;
 }
-.title h3{
+
+.title h3 {
     font-weight: 600 !important;
     font-size: 2rem !important;
     line-height: 2.375rem !important;
@@ -197,25 +325,87 @@ hr{
     text-align: center;
     margin-right: 100px;
 }
-form{
+
+form {
     display: block;
     margin-top: 0em;
     unicode-bidi: isolate;
     width: 100%;
 }
 
-.note-pass{
+.note-pass {
     width: 100%;
-        text-align: left;
-        font-size: 1.0rem !important;
+    text-align: left;
+    font-size: 1.0rem !important;
     margin-bottom: 10px;
     font-weight: lighter;
 }
-.box-action{
+
+.box-action {
     padding: 4.25rem 8.348rem;
     text-align: center;
 }
-.card{
+
+.card {
     border: none;
     box-shadow: none;
+}
+
+.slide-img {
+    width: 60%;
+    margin-left: 200px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[role=button] {
+    cursor: pointer;
+}
+
+.carousels-control-next-icon, .carousels-control-prev-icon {
+    background: #fff;
+    border-radius: 50%;
+    width: 3.25rem;
+    height: 3.25rem;
+    padding: 1rem 1.25rem;
+
+    i {
+        width: .813rem;
+        height: 1.25rem;
+        line-height: 1.25rem;
+        color: #000;
+    }
+}
+@media (min-width: 1200px) {
+    .col-xl-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }

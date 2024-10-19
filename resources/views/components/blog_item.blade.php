@@ -1,6 +1,6 @@
 <div class="card-body">
-    <img src="{{$img}}" alt="page">
-    <h5 class="card-title">{{ $title }}</h5>
+    <img href="/blog/lean-la-gi/" src="{{$img}}" alt="page">
+    <a href="/blog/tai-lieu/" type="button" class="link">{{$name}}</a>
+    <a href="/blog/lean-la-gi/" class="card-title">{{ $title }}</a>
     <p class="card-text">{{ $desc }}</p>
 </div>
-

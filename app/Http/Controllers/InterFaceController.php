@@ -28,7 +28,7 @@ class InterFaceController extends \App\Http\Controllers\Controller
 
     public function forgot()
     {
-        return view('forgot_passwords.forgot-password');
+        return view('forgot_password.forgot-password');
     }
 
     public function SignInVN()

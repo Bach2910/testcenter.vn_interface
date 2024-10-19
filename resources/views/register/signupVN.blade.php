@@ -1,10 +1,25 @@
 @extends('layout.account')
 @section('title','Đăng Ký')
 @section('country')
-    <select id="options-sign" name="options" onchange="navigateToUrl()">
-        <option value="option1">ENG</option>
-        <option value="option2">VIE</option>
-    </select>
+    <div class="custom-select">
+        <div class="selected-option" id="selected-text">
+            <img src="https://app.testcenter.vn/images/lang/uk_flag.png" alt="ENG" class="option-img">
+            <span>ENG</span>
+            <span class="arrow">&#9662;</span>
+        </div>
+        <div class="option-list" style="display: none;">
+            <div class="option" data-value="option1">
+                <img src="https://app.testcenter.vn/images/lang/uk_flag.png" alt="ENG" class="option-img">
+                <span>ENG</span>
+            </div>
+            <div class="option" data-value="option2">
+                <img src="https://app.testcenter.vn/images/lang/vietnam_flag.jpeg" alt="VIE" class="option-img">
+                <span>VIE</span>
+            </div>
+        </div>
+    </div>
+    <script src="{{asset('js/translate-vn-en/register.js')}}">
+    </script>
 @endsection
 @section('form')
     <div class="name">
@@ -50,4 +65,4 @@
         <p>Đã có tài khoản? <a href="{{route('LoginVN')}}">Đăng nhập</a></p>
     </div>
 @endsection
-<script src="{{asset('js/translate-vn-en/register.js')}}"></script>
+

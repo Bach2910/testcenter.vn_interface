@@ -72,7 +72,6 @@
             </div>
         </div>
     </div>
-
     <div class="product-section product-container-fluid product-section-function" style="overflow: hidden;">
         <p class="product-section-title mb-4 mt-4">
             Function
