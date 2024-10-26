@@ -1,19 +1,19 @@
 @extends('layout.account')
 @section('title','Đăng Ký')
 @section('country')
-    <div class="custom-select" style="width: 120px">
+    <div class="custom-select" style="width:120px">
         <div class="selected-option" id="selected-text">
-            <img src="https://app.testcenter.vn/images/lang/uk_flag.png" alt="ENG" class="option-img">
+            <img src="{{asset('image/country/uk_flag.png')}}" alt="ENG" class="option-img">
             <span>ENG</span>
             <span class="arrow">&#9662;</span>
         </div>
         <div class="option-list" style="display: none;">
             <div class="option" data-value="option1">
-                <img src="https://app.testcenter.vn/images/lang/uk_flag.png" alt="ENG" class="option-img">
+                <img src="{{asset('image/country/uk_flag.png')}}" alt="ENG" class="option-img">
                 <span>ENG</span>
             </div>
             <div class="option" data-value="option2">
-                <img src="https://app.testcenter.vn/images/lang/vietnam_flag.jpeg" alt="VIE" class="option-img">
+                <img src="{{asset('image/country/vietnam_flag.jpeg')}}" alt="VIE" class="option-img">
                 <span>VIE</span>
             </div>
         </div>

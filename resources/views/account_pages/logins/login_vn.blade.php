@@ -1,19 +1,19 @@
 @extends('layout.account')
 @section('title','Login')
 @section('country')
-    <div class="custom-select" style="width: 120px">
+    <div class="custom-select" style="width:120px">
         <div class="selected-option" id="selected-text">
-            <img src="https://app.testcenter.vn/images/lang/uk_flag.png" alt="ENG" class="option-img">
+            <img src="{{asset('image/country/uk_flag.png')}}" alt="ENG" class="option-img">
             <span>ENG</span>
             <span class="arrow">&#9662;</span>
         </div>
         <div class="option-list" style="display: none;">
             <div class="option" data-value="option1">
-                <img src="https://app.testcenter.vn/images/lang/uk_flag.png" alt="ENG" class="option-img">
+                <img src="{{asset('image/country/uk_flag.png')}}" alt="ENG" class="option-img">
                 <span>ENG</span>
             </div>
             <div class="option" data-value="option2">
-                <img src="https://app.testcenter.vn/images/lang/vietnam_flag.jpeg" alt="VIE" class="option-img">
+                <img src="{{asset('image/country/vietnam_flag.jpeg')}}" alt="VIE" class="option-img">
                 <span>VIE</span>
             </div>
         </div>
@@ -44,7 +44,7 @@
             <button class="topCv-login-button">Đăng Nhập</button>
             <div class="or-separator">Or</div>
             <div class="topCv-logo">
-                <img src="https://www.topcv.vn/v3/images/topcv-logo-4.png" alt="TopCV Logo"/>
+                <img src="{{asset('images/topcv-logo-4.png')}}" alt="TopCV Logo"/>
                 <span>Login with TopCV</span>
             </div>
             <div class="register-link">
