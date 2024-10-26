@@ -839,11 +839,6 @@ form {
   text-decoration: none; /* Đảm bảo không có gạch chân khi hover hoặc focus */
   color: ivory;
 }
-
-.container-header {
-  padding: 20px 8% 0 8%;
-}
-
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%; /* Giảm độ rộng của nút để không che nội dung */

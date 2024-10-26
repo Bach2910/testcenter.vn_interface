@@ -1,0 +1,382 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  height: auto;
+}
+
+.slide {
+  height: 100%;
+  background: #f0f6ff !important;
+}
+
+.left-div {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.login-line {
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  top: 0.7rem;
+  background: #fff;
+  width: 100%;
+}
+.login-line hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.login-container .topCv-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f8ff; /* Tùy chỉnh màu nền */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%; /* Điều chỉnh chiều rộng của logo */
+}
+.login-container .topCv-logo img {
+  width: 50px; /* Giảm kích thước logo */
+  height: auto;
+  margin-right: 10px;
+}
+.login-container .topCv-login-button {
+  background-color: #2C4A9F;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Điều chỉnh chiều rộng của button */
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+.login-container .topCv-login-button:hover {
+  background-color: #1e3a6f; /* Màu khi hover */
+}
+.login-container .or-separator {
+  font-size: 14px;
+  color: #888;
+  margin: 30px 0 30px 0;
+}
+.login-container .register-link {
+  font-size: 14px;
+  color: #333;
+  margin: 30px 0 30px 0;
+}
+.login-container .register-link .register-link a {
+  color: #2C4A9F;
+  text-decoration: none;
+}
+.login-container .register-link .register-link a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: auto;
+  height: 100px;
+  align-items: center;
+}
+
+.country {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: right; /* Đẩy select sang bên phải */
+}
+.country .custom-select {
+  position: relative;
+  width: 120px;
+  cursor: pointer;
+}
+.country .selected-option {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  padding: 10px 5px 5px 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  justify-content: space-around;
+  align-items: center;
+}
+.country .selected-option .arrow {
+  font-size: 14px;
+  color: #333;
+  transition: transform 0.3s; /* Thêm hiệu ứng cho mũi tên */
+}
+.country .option-list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #2C4A9F;
+  z-index: 100;
+  justify-content: space-around;
+}
+.country .option {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.country .option-img {
+  width: 1.75rem !important;
+  height: 1.25rem !important;
+  margin-right: 1rem;
+}
+.country .option:hover {
+  background-color: #f0f0f0;
+}
+
+.form-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form-control {
+  padding-left: 40px;
+}
+
+.name {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.phone {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.company {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.email {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.password-again-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.right-div p {
+  width: 100%;
+  max-width: 300px;
+  color: #718096;
+  font-size: 13px;
+}
+
+input[type=password], input[type=text], input[type=email] {
+  border-radius: 0;
+  border: none !important;
+  border-bottom: 2px solid #d3d5d7 !important;
+  background: #fff;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  padding: 0.75rem 0.75rem 0.75rem 3rem;
+  height: 3rem;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.right-div .btn-primary {
+  position: relative;
+  width: 100%;
+  background-color: #1a4c9d;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  position: relative;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item {
+  padding: 40px;
+}
+
+.carousel-item .item-heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+  color: #05216f;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.carousel-item .item-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  text-align: justify;
+}
+
+.carousel .carousel-indicators button {
+  background-color: #1a4c9d;
+}
+
+.note {
+  font-weight: 700;
+  margin-left: 200px;
+}
+
+.forgot {
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: content-box;
+  display: block;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  unicode-bidi: isolate;
+  margin-bottom: 10px;
+}
+
+.btn-topcv {
+  width: 100%;
+  height: 100px;
+  background: #f0f6ff;
+  border-radius: 0.24rem;
+  text-align: center;
+  text-transform: none;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  min-height: 2.5rem;
+  transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+  color: #2c4a9f;
+}
+
+.title h3 {
+  font-weight: 600 !important;
+  font-size: 2rem !important;
+  line-height: 2.375rem !important;
+  color: #0a2161;
+  margin-left: 100px;
+  text-align: center;
+  margin-right: 100px;
+}
+
+form {
+  display: block;
+  margin-top: 0;
+  unicode-bidi: isolate;
+}
+
+.note-pass {
+  width: 100%;
+  text-align: left;
+  font-size: 1rem !important;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+.box-action {
+  padding: 4.25rem 8.348rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .box-action {
+    padding: 3rem 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .box-action {
+    padding: 2rem 0;
+  }
+}
+.card {
+  border: none;
+  box-shadow: none;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+.carousels-control-next-icon, .carousels-control-prev-icon {
+  background: #fff;
+  border-radius: 50%;
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: 1rem 1.25rem;
+}
+.carousels-control-next-icon i, .carousels-control-prev-icon i {
+  width: 0.813rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  color: #000;
+}
+
+.auth-title {
+  font-weight: 600 !important;
+  font-size: 2rem !important;
+  line-height: 2.375rem !important;
+  color: #0a2161;
+}
+
+/*# sourceMappingURL=account.css.map */

@@ -1,4 +1,5 @@
 @extends('layout.home')
+@section('name','body-container-product')
 @section('main')
     <div class="container product-section">
         <div class="mb-4 product-section-intro">
@@ -24,7 +25,7 @@
                         </p>
                     </div>
                     <div class="mt-5">
-                        <a class="btn btn-primary btn-register " href="{{route('SignIn')}}">Đăng ký miễn phí</a>
+                        <a class="btn btn-primary btn-register " href="{{route('register')}}">Đăng ký miễn phí</a>
                         <a class="btn btn-link font-weight-500 primary-color" href="{{route('blog')}}">Tìm hiểu thêm</a>
                     </div>
                 </div>
@@ -91,23 +92,26 @@
                 <h4 class="font-weight-bold mb-4 mobile-hidden pc-show">Các tính năng nổi bật của TestCenter.vn</h4>
                 <p class="mobile-hidden pc-show">Testcenter.vn là nền tảng số cung cấp giải pháp test online đánh giá
                     năng lực nhân sự toàn diện</p>
-                @for($i=0;$i<4;$i++)
-                    <div class="product-section-function-right-box col-12 col-md-10 p-2 mb-4">
-                        <div class="row pt-3">
-                            <div class="col-md-1 col-2 d-flex align-items-start mt-2 ml-3 p-0 pl-2">
-                                <img src="https://www.testcenter.vn/images/products/icon-question.png"
-                                     class="img-fluid"/>
-                            </div>
-                            <div class="col-md-9 col-9">
-                                <p class="product-section-function-right-box-title">Đa dạng hình thức câu hỏi</p>
-                                <p>
-                                    Cung cấp nhiều loại câu hỏi khác nhau như Trắc nghiệm online, Tự luận,
-                                    Đúng/Sai, Matching, SQL, Coding,...
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                @endfor
+                @include('components.product_section',[
+                   'img' => asset('image/product/icon-question.png'),
+                   'title' => 'Đa dạng hình thức câu hỏi',
+                   'description' => 'Cung cấp nhiều loại câu hỏi khác nhau như Trắc nghiệm online, Tự luận, Đúng/Sai, Matching, SQL, Coding,...'
+               ])
+                @include('components.product_section',[
+                    'img' => asset('image/product/icon-protection.png'),
+                    'title' => 'Cá nhân hóa đề thi',
+                    'description' => 'Hoàn toàn chủ động thao tác trong nội dung từng câu hỏi'
+                ])
+                @include('components.product_section',[
+                    'img' => asset('image/product/icon-to-do-list.png'),
+                    'title' => 'Quản lý đề thi dễ dàng',
+                    'description' => 'Tạo và quản lý đề thi trực tuyến theo nhu cầu của doanh nghiệp'
+                ])
+                @include('components.product_section',[
+                    'img' => asset('image/product/icon-chart.png'),
+                    'title' => 'Thống kê kết quả trực quan',
+                    'description' => 'Kết quả được biểu thị thông qua nhiều loại biểu đồ khác nhau kết hợp với số liệu cụ thể.'
+                ])
                 <div class="d-flex justify-content-start ">
                     <a class="btn btn-primary btn-register" href="https://app.testcenter.vn/register/?source=web">Đăng
                         ký miễn phí</a>
@@ -115,7 +119,6 @@
             </div>
         </div>
     </div>
-
     <div class="product-section container product-section-advantage">
         <p class="product-section-title mb-2 mt-4">Advantage</p>
         <div class="mb-4 text-center pl-4 pr-4">
@@ -133,23 +136,26 @@
                         Chỉ với 5 phút để có thể xây dựng một bộ đề thi theo ý muốn với đa dạng hình thức câu hỏi. Hãy
                         để Testcenter.vn đồng hành cùng bạn!
                     </div>
-                    @for($i=0;$i<4;$i++)
-                        <div class="d-flex">
-                            <img src="https://www.testcenter.vn/images/products/check.png" class="arrow-icon"/>
-                            <div>
-                                <p class="font-weight-bold mb-1">
-                                    Ngân hàng đề với 300+ đề thi mẫu
-                                </p>
-                                <p class="item-content-value">
-                                    Đa dạng các test trắc nghiệm MBTI, DISC, EQ, IQ, đề thi TOEIC,...
-                                </p>
-                            </div>
-                        </div>
-                    @endfor
+                    @include('components.feature_item',[
+                        'text1' => 'Ngân hàng đề với 300+ đề thi mẫu',
+                        'text2' => 'Đa dạng các test trắc nghiệm MBTI, DISC, EQ, IQ, đề thi TOEIC,...'
+                    ])
+                    @include('components.feature_item',[
+                        'text1' => 'Tùy chọn dạng câu hỏi',
+                        'text2' => 'Đa dạng câu hỏi: Trắc nghiệm, Đúng – Sai, Hình ảnh, Video,…'
+                    ])
+                    @include('components.feature_item',[
+                        'text1' => 'Thiết lập thời gian dễ dàng',
+                        'text2' => 'Cài đặt thời gian cho từng câu hỏi và từng bộ đề thi'
+                    ])
+                    @include('components.feature_item',[
+                        'text1' => 'Tương thích với mọi thiết bị',
+                        'text2' => 'Tương thích với máy tính, máy tính bảng và điện thoại di động'
+                    ])
                 </div>
             </div>
             <div class="col-md-6 pt-4 mobile-hidden pc-show" style="padding-right: 0;">
-                <img alt="Giải pháp test online" src="https://www.testcenter.vn/images/products/group-2.png"
+                <img alt="Giải pháp test online" src="{{asset('image/product/group-2.png')}}"
                      style="width: 100%;"/>
             </div>
         </div>
@@ -157,7 +163,7 @@
         <div class="row mt-4 product-section-advantage-box"
              style="background: linear-gradient(180deg, #F3F9FF 0%, #EDFBF3 100%);">
             <div class="col-md-6 mobile-hidden pc-show">
-                <img alt="Số hóa quy trình đánh giá nhân sự" src="https://www.testcenter.vn/images/products/group-3.png"
+                <img alt="Số hóa quy trình đánh giá nhân sự" src="{{asset('image/product/group-3.png')}}"
                      style="width: 100%;"/>
             </div>
             <div class="col-md-6 p-4">
@@ -170,19 +176,15 @@
                         giảm bớt gánh nặng cho doanh nghiệp Việt Nam!
                     </div>
                 </div>
-                @for($i=0;$i<4;$i++)
-                    <div class="d-flex my-4">
-                        <img src="https://www.testcenter.vn/images/products/check.png" class="arrow-icon"/>
-                        <div>
-                            <p class="mb-1 font-weight-bold">
-                                Chủ động upload và tạo ra kho đề thi riêng
-                            </p>
-                            <p class="item-content-value">
-                                Xây dựng bài test online dành riêng cho mô hình doanh nghiệp
-                            </p>
-                        </div>
-                    </div>
-                @endfor
+                @include('components.feature_item',[
+                        'text1' => 'Chủ động upload và tạo ra kho đề thi riêng',
+                        'text2' => 'Xây dựng bài test online dành riêng cho mô hình doanh nghiệp'
+                    ])
+                @include('components.feature_item',[
+                        'text1' => 'Thiết lập mã khóa nâng cao bảo mật đề thi',
+                        'text2' => 'Bảo mật tuyệt đối bằng QR code'
+                    ])
+
             </div>
         </div>
 
@@ -198,27 +200,22 @@
                         đơn giản
                     </div>
                 </div>
-                @for($i=0;$i<4;$i++)
-                    <div class="d-flex my-4">
-                        <img src="https://www.testcenter.vn/images/products/check.png" class="arrow-icon"/>
-                        <div>
-                            <p class="mb-1 font-weight-bold">
-                                Kết quả được biểu thị dưới dạng biểu đồ
-                            </p>
-                            <p class="item-content-value">
-                                Biểu đồ cột, biểu đồ tròn, phần trăm,…
-                            </p>
-                        </div>
-                    </div>
-                @endfor
+                @include('components.feature_item',[
+                       'text1' => 'Kết quả được biểu thị dưới dạng biểu đồ',
+                       'text2' => 'Biểu đồ cột, biểu đồ tròn, phần trăm,…'
+                   ])
+                @include('components.feature_item',[
+                       'text1' => 'Báo cáo và phân tích dễ dàng',
+                       'text2' => 'Tự động tổng hợp kết quả phục vụ cho đánh giá nhân sự'
+                   ])
             </div>
             <div class="col-md-6 mobile-hidden pc-show" style="padding-right: 0;">
-                <img alt="Thống kê kết quả trực quan" src="https://www.testcenter.vn/images/products/group-4.png"
+                <img alt="Thống kê kết quả trực quan" src="{{asset('image/product/group-4.png')}}"
                      style="width: 100%;"/>
             </div>
         </div>
         <div class="d-flex justify-content-center mt-4">
-            <a class="btn btn-primary btn-register" href="{{route('SignIn')}}">Đăng ký miễn phí</a>
+            <a class="btn btn-primary btn-register" href="{{route('register')}}">Đăng ký miễn phí</a>
         </div>
     </div>
     <div class="product-section product-section-price mt-4 mb-md-4 pb-4 pt-2" id="price">
@@ -235,72 +232,98 @@
             <div class="row">
                 <div class="col-md-3 col-12 product-section-price-box product-section-price-box-primary">
                     <div class="product-section-price-box-header">
-                        <img src="https://www.testcenter.vn/images/products/diamond-1.png">
+                        <img src="{{asset('image/product/diamon-1.png')}}">
                         <p class="text-uppercase mt-2 font-weight-500">Free</p>
                         <h3 class="font-weight-bold">Miễn phí</h3>
                         <p>Sử dụng trọn đời</p>
                     </div>
                     <hr>
                     <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Mở khóa toàn bộ tính năng Premium
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Mở khóa toàn bộ tính
+                        năng Premium
                     </p>
                     <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Tạo đề thi online dễ dàng
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Tạo đề thi online dễ
+                        dàng
                     </p>
                     <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Tổ chức nhiều đợt thi cùng lúc
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Tổ chức nhiều đợt thi
+                        cùng lúc
                     </p>
                     <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> 300+ bộ đề mẫu đa dạng
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> 300+ bộ đề mẫu đa
+                        dạng
                     </p>
                     <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> 20 lượt test mỗi tháng
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> 20 lượt test mỗi
+                        tháng
                     </p>
                     <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Thống kê kết quả chi tiết trực quan
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Thống kê kết quả chi
+                        tiết trực quan
                     </p>
                     <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Hỗ trợ trong giờ hành chính 24/7
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Hỗ trợ trong giờ hành
+                        chính 24/7
                     </p>
-                    <a href="{{route('SignIn')}}" class="btn btn-register btn-light">Đăng ký miễn phí</a>
+                    <a href="{{route('register')}}" class="btn btn-register btn-light">Đăng ký miễn phí</a>
                 </div>
-                @for($i=0;$i<4;$i++)
-                <div class="col-md-2 col-12 product-section-price-box">
-                    <div class="product-section-price-box-header">
-                        <img src="https://www.testcenter.vn/images/products/diamond-2.png">
-                        <p class="text-uppercase mt-2 font-weight-500 price-color">Starter</p>
-                        <h3 class="font-weight-bold price-color">3.000.000</h3>
-                        <p class="price-color">VND/năm</p>
-                    </div>
-                    <hr>
-                    <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Mở khoá toàn bộ tính năng sản phẩm
-                    </p>
-                    <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Miễn phí cập nhật tính năng mới
-                    </p>
-                    <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Tổ chức nhiều đợt thi cùng lúc
-                    </p>
-                    <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> 300+ bộ đề mẫu đa dạng
-                    </p>
-                    <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> 100 lượt test mỗi tháng
-                    </p>
-                    <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Tối đa 1 tài khoản quản lý
-                    </p>
-                    <p class="d-flex">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> 200 người test cùng lúc
-                    </p>
-
-                    <p class="d-flex pb-5">
-                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i> Hỗ trợ trong giờ hành chính 24/7
-                    </p>
-                    <a href="{{route('SignIn')}}" class="btn btn-register btn-secondary">Trải nghiệm ngay</a>
-                </div>
-                @endfor
+                @include('components.product_price_box',[
+                  'img' => asset('image/product/diamond-1.png'),
+                  'status' => 'STARTER',
+                  'price' => '3.000.000',
+                  'currency' => 'VND/năm',
+                  'text1' => 'Mở khoá toàn bộ tính năng sản phẩm',
+                  'text2' => 'Miễn phí cập nhật tính năng mới',
+                  'text3' => 'Tổ chức nhiều đợt thi cùng lúc',
+                  'text4' => '300+ bộ đề mẫu đa dạng',
+                  'text5' => '100 lượt test mỗi tháng',
+                  'text6' => 'Tối đa 1 tài khoản quản lý',
+                  'text7' => '200 người test cùng lúc',
+                  'text8' => 'Hỗ trợ trong giờ hành chính 24/7'
+              ])
+                @include('components.product_price_box',[
+                      'img' => asset('image/product/diamond-2.png'),
+                      'status' => 'BUSINESS',
+                      'price' => '25.000.000',
+                      'currency' => 'VND/năm',
+                      'text1' => 'Mở khoá toàn bộ tính năng sản phẩm',
+                      'text2' => 'Miễn phí cập nhật tính năng mới',
+                      'text3' => 'Tổ chức nhiều đợt thi cùng lúc',
+                      'text4' => '300+ bộ đề mẫu đa dạng',
+                      'text5' => '100 lượt test mỗi tháng',
+                      'text6' => 'Tối đa 3 tài khoản quản lý',
+                      'text7' => '500 người test cùng lúc',
+                      'text8' => 'Hỗ trợ trong giờ hành chính 24/7'
+                  ])
+                @include('components.product_price_box',[
+                     'img' => asset('image/product/diamond-3.png'),
+                     'status' => 'BUSINESS PLUS',
+                     'price' => '30.000.000',
+                     'currency' => 'VND/năm',
+                     'text1' => 'Mở khoá toàn bộ tính năng sản phẩm',
+                     'text2' => 'Miễn phí cập nhật tính năng mới',
+                     'text3' => 'Tổ chức nhiều đợt thi cùng lúc',
+                     'text4' => '300+ bộ đề mẫu đa dạng',
+                     'text5' => '100 lượt test mỗi tháng',
+                     'text6' => 'Tối đa 5 tài khoản quản lý',
+                     'text7' => '200-500 người test cùng lúc',
+                     'text8' => 'Hỗ trợ trong giờ hành chính 24/7'
+                 ])
+                @include('components.product_price_box',[
+                     'img' => asset('image/product/diamond-4.png'),
+                     'status' => 'ENTERPRISE',
+                     'price' => 'Liên hệ',
+                     'currency' => 'Liên hệ để có giá tốt nhất',
+                     'text1' => 'Mở khoá toàn bộ tính năng sản phẩm',
+                     'text2' => 'Miễn phí cập nhật tính năng mới',
+                     'text3' => 'Tổ chức nhiều đợt thi cùng lúc',
+                     'text4' => '300+ bộ đề mẫu đa dạng',
+                     'text5' => '100 lượt test mỗi tháng',
+                     'text6' => 'Tối đa 10 tài khoản quản lý',
+                     'text7' => '10.000 người test cùng lúc',
+                     'text8' => 'Hỗ trợ trong giờ hành chính 24/7'
+                 ])
             </div>
         </div>
     </div>
@@ -312,91 +335,42 @@
                 </p>
                 <div class="row">
                     <div class="col-md-7 col-12 product-section-problem-right">
-                        <h4 class="font-weight-bold mb-4 mobile-hidden pc-show">Những lợi ích khi doanh nghiệp sử dụng TestCenter.vn</h4>
-                        <h5 class=" text-center font-weight-500 mb-4 mobile-show pc-hidden text-center-mobile">Những lợi ích khi doanh nghiệp sử dụng TestCenter.vn</h5>
-                        @for($i=0;$i<2;$i++)
-                        <div class="row">
-                            <div class="col-md-2 col-2 d-flex align-items-start mt-2 ml-3 p-md-0 pl-2">
-                                <img src="https://www.testcenter.vn/images/products/line-chart-icon.png" class="img-fluid" />
-                            </div>
-                            <div class="col-md-9 col-9 p-md-0">
-                                <p class="product-section-benefit-list-title">Nâng tầm thương hiệu tuyển dụng</p>
-                                <p>
-                                    Chỉ thêm vài bước nhỏ trong quá trình tuyển dụng, ứng viên có thể thấy được
-                                    sự chuyên nghiệp và chỉn chu trong từng hoạt động của doanh nghiệp.
-                                </p>
-                            </div>
-                        </div>
-                        @endfor
+                        <h4 class="font-weight-bold mb-4 mobile-hidden pc-show">Những lợi ích khi doanh nghiệp sử dụng
+                            TestCenter.vn</h4>
+                        <h5 class=" text-center font-weight-500 mb-4 mobile-show pc-hidden text-center-mobile">Những lợi
+                            ích khi doanh nghiệp sử dụng TestCenter.vn</h5>
+                        @include('components.product_section_benefit',[
+                            'img' => asset('image/product/line-chart-icon.png'),
+                            'title' => 'Nâng tầm thương hiệu tuyển dụng',
+                            'description' => 'Chỉ thêm vài bước nhỏ trong quá trình tuyển dụng, ứng viên có thể thấy được sự chuyên nghiệp và chỉn chu trong từng hoạt động của doanh nghiệp.'
+                        ])
+                        @include('components.product_section_benefit',[
+                            'img' => asset('image/product/users-icon.png'),
+                            'title' => 'Nâng tầm thương hiệu tuyển dụng',
+                            'description' => 'Chỉ thêm vài bước nhỏ trong quá trình tuyển dụng, ứng viên có thể thấy được sự chuyên nghiệp và chỉn chu trong từng hoạt động của doanh nghiệp.'
+                        ])
                     </div>
-                    <div class="col-md-5 align-items-center d-flex p-0 product-section-problem-left mobile-hidden pc-show">
-                        <img src="https://www.testcenter.vn/images/products/benefit.png" class="img-fluid" />
+                    <div
+                        class="col-md-5 align-items-center d-flex p-0 product-section-problem-left mobile-hidden pc-show">
+                        <img src="{{asset('image/product/benefit.png')}}" class="img-fluid"/>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="product-section product-section-operate pt-4">
         <div class="container">
             <p class="product-section-title mb-4 text-left text-center-mobile">
                 Operate
             </p>
             <h4 class="font-weight-bold mb-4 mobile-hidden pc-show">TestCenter.vn vận hành như thế nào?</h4>
-            <h5 class="font-weight-500 mb-4 text-center-mobile mobile-show pc-hidden">TestCenter.vn vận hành như thế nào?</h5>
-            <div class="step-wrapper-mobile mobile-show pc-hidden d-flex">
-                <div>
-                    <div class="row">
-                        <div class="col-md-1 col-2 d-flex align-items-start ml-3 p-0 pl-2">
-                            <div class="vertical-line">
-                            </div>
-                            <div class="step-number step-number-1 text-white font-weight-500 d-flex justify-content-center align-items-center">
-                                <span>1</span>
-                            </div>
-                        </div>
-                        <div class="col-md-9 col-9">
-                            <p class="font-weight-bold">Bước 1</p>
-                            <p>
-                                Xây dựng kho đề thi dựa trên nhu cầu
-                                tuyển dụng của doanh nghiệp
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-1 col-2 d-flex align-items-start ml-3 p-0 pl-2">
-                            <div class="vertical-line">
-                            </div>
-                            <div class="step-number step-number-2 text-white font-weight-500 d-flex justify-content-center align-items-center">
-                                2
-                            </div>
-                        </div>
-                        <div class="col-md-9 col-9">
-                            <p class="font-weight-bold">Bước 2</p>
-                            <p>
-                                Tổ chức thi online cho ứng viên hoặc
-                                nhóm nhân sự
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-1 col-2 d-flex align-items-start ml-3 p-0 pl-2">
-                            <div class="step-number step-number-3 text-white font-weight-500 d-flex justify-content-center align-items-center">
-                                3
-                            </div>
-                        </div>
-                        <div class="col-md-9 col-9">
-                            <p class="font-weight-bold">Bước 3</p>
-                            <p>
-                                Tổng hợp kết quả và xuất báo cáo file excel
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h5 class="font-weight-500 mb-4 text-center-mobile mobile-show pc-hidden">TestCenter.vn vận hành như thế
+                nào?</h5>
             <div class="step-wrapper mobile-hidden">
                 <div class="step-item text-center">
                     <div class="d-flex justify-content-center align-items-center">
-                        <div class="step-number step-number-1 text-white font-weight-500 d-flex justify-content-center align-items-center">
+                        <div
+                            class="step-number step-number-1 text-white font-weight-500 d-flex justify-content-center align-items-center">
                             <span>1</span>
                         </div>
                     </div>
@@ -411,7 +385,8 @@
                 <div class="line "></div>
                 <div class="step-item text-center">
                     <div class="d-flex justify-content-center align-items-center">
-                        <div class="step-number step-number-2 text-white font-weight-500 d-flex justify-content-center align-items-center">
+                        <div
+                            class="step-number step-number-2 text-white font-weight-500 d-flex justify-content-center align-items-center">
                             2
                         </div>
                     </div>
@@ -425,7 +400,8 @@
                 <div class="line "></div>
                 <div class="step-item text-center">
                     <div class="d-flex justify-content-center align-items-center">
-                        <div class="step-number step-number-3 text-white font-weight-500 d-flex justify-content-center align-items-center">
+                        <div
+                            class="step-number step-number-3 text-white font-weight-500 d-flex justify-content-center align-items-center">
                             3
                         </div>
                     </div>

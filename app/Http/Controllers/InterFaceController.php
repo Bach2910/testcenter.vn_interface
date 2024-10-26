@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
+
 class InterFaceController extends \App\Http\Controllers\Controller
 {
     //
@@ -16,34 +18,34 @@ class InterFaceController extends \App\Http\Controllers\Controller
         return view('product');
     }
 
-    public function SignIn()
+    public function register()
     {
-        return view('register.signup');
+        return view('account_pages.registers.register');
     }
 
-    public function Login()
+    public function login()
     {
-        return view('logins.login');
+        return view('account_pages.logins.login');
     }
 
-    public function forgot()
+    public function forgetPassword()
     {
-        return view('forgot_password.forgot-password');
+        return view('account_pages.forget_passwords.forget_password');
     }
 
-    public function SignInVN()
+    public function registerVN()
     {
-        return view('register.signupVN');
+        return view('account_pages.registers.register_vn');
     }
 
-    public function LoginVN()
+    public function loginVN()
     {
-        return view('logins.loginVN');
+        return view('account_pages.logins.login_vn');
     }
 
-    public function forgotVN()
+    public function forgetPasswordVN()
     {
-        return view('forgot_password.forgot-passwordVN');
+        return view('account_pages.forget_passwords.forget_password_vn');
     }
 
     public function blog()
@@ -65,10 +67,23 @@ class InterFaceController extends \App\Http\Controllers\Controller
     {
         return view('pages.content3');
     }
+    public function termsUse(){
+        return view('footer_pages.terms_of_service');
+    }
+    public function paginateArticles($data, $viewName, $variableName = 'articles')
+    {
+        $collection = collect($data);
+        $perPage = 5;
+        $currentPage = LengthAwarePaginator::resolveCurrentPage();
+        $currentPageItems = $collection->slice(($currentPage - 1) * $perPage, $perPage)->values();
+        $paginated = new LengthAwarePaginator($currentPageItems, $collection->count(), $perPage);
+        $paginated->setPath(request()->url());
+
+        return view($viewName, [$variableName => $paginated]);
+    }
     public function document()
     {
-        // Sample articles array
-        $articles=[];
+        $articles = [];
         for ($i = 1; $i <= 10; $i++) {
             $articles[] = [
                 'title' => 'Reference check là gì? 4 điểm cần lưu ý khi kiểm tra tham chiếu 6 ',
@@ -77,26 +92,14 @@ class InterFaceController extends \App\Http\Controllers\Controller
                 'excerpt' => 'Reference check là khâu vô cùng quan trọng trong quá trình tuyển dụng...',
             ];
         }
-        // Chuyển mảng sang Collection
-        $Collection = collect($articles);
 
-        // Phân trang Collection (ví dụ 5 items mỗi trang)
-        $perPage = 5;
-        $currentPage = LengthAwarePaginator::resolveCurrentPage();
-        $currentPageItems = $Collection->slice(($currentPage - 1) * $perPage, $perPage)->values();
-
-        // Tạo đối tượng paginator
-        $paginated = new LengthAwarePaginator($currentPageItems, $Collection->count(), $perPage);
-
-        // Thiết lập đường dẫn phân trang
-        $paginated->setPath(request()->url());
-
-        // Truyền biến $paginatedArticles tới view
-        return view('components_blog.document', ['articles' => $paginated]);
+        // Gọi phương thức chung
+        return $this->paginateArticles($articles, 'components_blog.document','articles');
     }
+
     public function exam()
     {
-        $exams=[];
+        $exams = [];
         for ($i = 1; $i <= 10; $i++) {
             $exams[] = [
                 'title' => 'IQ và EQ cái nào quan trọng hơn? Chọn yếu tố gì trong tuyển... ',
@@ -105,77 +108,37 @@ class InterFaceController extends \App\Http\Controllers\Controller
                 'excerpt' => 'IQ và EQ đã trở thành hai khái niệm quan trọng trong lĩnh vực tuyển dụng nhân sự. Tuy vậy, rất nhiều nhà tuyển dụng vẫn phân vân không biết IQ và EQ cái...',
             ];
         }
-        // Chuyển mảng sang Collection
-        $Collection = collect($exams);
 
-        // Phân trang Collection (ví dụ 5 items mỗi trang)
-        $perPage = 5;
-        $currentPage = LengthAwarePaginator::resolveCurrentPage();
-        $currentPageItems = $Collection->slice(($currentPage - 1) * $perPage, $perPage)->values();
-
-        // Tạo đối tượng paginator
-        $paginated = new LengthAwarePaginator($currentPageItems, $Collection->count(), $perPage);
-
-        // Thiết lập đường dẫn phân trang
-        $paginated->setPath(request()->url());
-
-        // Truyền biến $paginatedArticles tới view
-        return view('components_blog.exam', ['exams' => $paginated]);
+        return $this->paginateArticles($exams, 'components_blog.exam','exams');
     }
+
     public function news()
     {
-        $news=[];
+        $news = [];
         for ($i = 1; $i <= 10; $i++) {
             $news[] = [
                 'title' => 'Equity Theory là gì? Cách quản trị doanh nghiệp hiệu quả với học thuyết... ',
                 'url' => '/blog/equity-theory-la-gi/',
                 'image_url' => 'https://www.testcenter.vn/blog/wp-content/uploads/2024/02/equity-theory-la-gi-testcenter-1-324x235.jpg',
-                'excerpt' => 'Quản trị doanh nghiệp chưa bao giờ là một nhiệm vụ dễ dàng đối với các nhà quản lý. Nhưng với sự “dẫn đường” của học thuyết Equity Theory, nhiều nhà quản lý có...',
+                'excerpt' => 'Quản trị doanh nghiệp chưa bao giờ là một nhiệm vụ dễ dàng đối với các nhà quản lý...',
             ];
         }
-        // Chuyển mảng sang Collection
-        $Collection = collect($news);
 
-        // Phân trang Collection (ví dụ 5 items mỗi trang)
-        $perPage = 5;
-        $currentPage = LengthAwarePaginator::resolveCurrentPage();
-        $currentPageItems = $Collection->slice(($currentPage - 1) * $perPage, $perPage)->values();
-
-        // Tạo đối tượng paginator
-        $paginated = new LengthAwarePaginator($currentPageItems, $Collection->count(), $perPage);
-
-        // Thiết lập đường dẫn phân trang
-        $paginated->setPath(request()->url());
-
-        // Truyền biến $paginatedArticles tới view
-        return view('components_blog.news', ['news' => $paginated]);
+        return $this->paginateArticles($news, 'components_blog.news','news');
     }
+
     public function peoples()
     {
-        $peoples=[];
+        $peoples = [];
         for ($i = 1; $i <= 10; $i++) {
             $peoples[] = [
                 'title' => 'Cách sa thải nhân viên khéo léo | Những điều cần biết và lưu... ',
                 'url' => '/blog/equity-theory-la-gi/',
                 'image_url' => 'https://www.testcenter.vn/blog/wp-content/uploads/2023/12/cach-sa-thai-nhan-vien-kheo-leo-testcenter-324x235.jpg',
-                'excerpt' => 'Cách sa thải nhân viên khéo léo được xem như một trong những kỹ năng quan trọng hàng đầu mà bất cứ nhà quản lý doanh nghiệp nào cũng cần nắm rõ. Vậy, đâu...',
+                'excerpt' => 'Cách sa thải nhân viên khéo léo được xem như một trong những kỹ năng quan trọng hàng đầu mà bất cứ nhà quản lý doanh nghiệp nào cũng cần nắm rõ...',
             ];
         }
-        // Chuyển mảng sang Collection
-        $Collection = collect($peoples);
 
-        // Phân trang Collection (ví dụ 5 items mỗi trang)
-        $perPage = 5;
-        $currentPage = LengthAwarePaginator::resolveCurrentPage();
-        $currentPageItems = $Collection->slice(($currentPage - 1) * $perPage, $perPage)->values();
-
-        // Tạo đối tượng paginator
-        $paginated = new LengthAwarePaginator($currentPageItems, $Collection->count(), $perPage);
-
-        // Thiết lập đường dẫn phân trang
-        $paginated->setPath(request()->url());
-
-        // Truyền biến $paginatedArticles tới view
-        return view('components_blog.people', ['peoples' => $paginated]);
+        return $this->paginateArticles($peoples, 'components_blog.people','peoples');
     }
 }

@@ -1,0 +1,19 @@
+<div class="hidden-news-div">
+    <div class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative h-100">
+        <div class="img-wrapper">
+            <img
+                src="{{asset('image/resources/tuyen-mass-la-gi-testcenter-324x235.jpg')}}"
+                alt="Micromanagement image">
+        </div>
+        <div class="item-small-detail">
+            <div class="title-small">
+                <a href="{{route('blog_equity')}}">{{$title}}</a>
+            </div>
+            <div class="button-link">
+                <a href="{{route('document')}}"
+                   class=" text-white "
+                >{{$button}}</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -56,13 +56,12 @@
                         <li><a href="#section6">Phương pháp ứng dụng để phát huy tối đa hiệu quả của Lean trong doanh
                                 nghiệp</a>
                             <ul>
-                                <li><a href="section6-1">6-1. Thiết lập chiến lược mục tiêu rõ ràng</a></li>
-                                <li><a href="section6-2">6-2. Kiên định với mô hình Lean</a></li>
-                                <li><a href="section6-3">6-3. Vạch ra chuỗi giá trị từ đầu đến cuối</a></li>
-                                <li><a href="section6-4">6-4. Đặt tiêu chuẩn rõ ràng ngay từ đầu</a></li>
-                                <li><a href="section6-5">6-5. Tập trung vào nhóm lãnh đạo tuyến đầu</a></li>
-                                <li><a href="section6-6">6-6. Phân bổ hợp lý các nguồn lực</a></li>
-                                <li><a href="section6-7">6-7. Sát sao ngay từ quy trình tuyển dụng</a></li>
+                                <li><a href="#section6-1">6-1. Thiết lập chiến lược mục tiêu rõ ràng</a></li>
+                                <li><a href="#section6-2">6-2. Kiên định với mô hình Lean</a></li>
+                                <li><a href="#section6-4">6-4. Đặt tiêu chuẩn rõ ràng ngay từ đầu</a></li>
+                                <li><a href="#section6-5">6-5. Tập trung vào nhóm lãnh đạo tuyến đầu</a></li>
+                                <li><a href="#section6-6">6-6. Phân bổ hợp lý các nguồn lực</a></li>
+                                <li><a href="#section6-7">6-7. Sát sao ngay từ quy trình tuyển dụng</a></li>
                             </ul>
                         </li>
                         <li><a href="#section7">7. Tổng kết</a></li>

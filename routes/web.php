@@ -3,24 +3,35 @@
 use App\Http\Controllers\InterFaceController;
 use Illuminate\Support\Facades\Route;
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
 
 Route::get('/', [InterFaceController::class, 'index'])->name('index');
 Route::get('/product',[InterFaceController::class,'product'])->name('product');
-Route::get('/register',[InterFaceController::class,'SignIn'])->name('SignIn');
-Route::get('/register/vn',[InterFaceController::class,'SignInVN'])->name('SignInVN');
-Route::get('/login',[InterFaceController::class,'Login'])->name('Login');
-Route::get('/login/vn',[InterFaceController::class,'loginVN'])->name('LoginVN');
-Route::get('/forgot-password',[InterFaceController::class,'forgot'])->name('forgot');
-Route::get('/forgot-password/vn',[InterFaceController::class,'forgotVN'])->name('forgotVN');
-Route::get('/blog',[InterFaceController::class,'blog'])->name('blog');
-Route::get('/blog/micromanagement-la-gi/',[InterFaceController::class,'blogMicromanagement'])->name('blogMicromanagement');
-Route::get('/blog/equity-theory-la-gi/',[InterFaceController::class,'blogEquity'])->name('blogEquity');
-Route::get('/blog/lean-la-gi/',[InterFaceController::class,'blogLean'])->name('blogLean');
-Route::get('/blog/dau-hieu-nhan-biet-ung-vien-khong-trung-thuc/',[InterFaceController::class,'blogTrue'])->name('blogTrue');
-Route::get('/blog/tai-lieu/',[InterFaceController::class,'document'])->name('document');
-Route::get('/blog/mau-de-test/',[InterFaceController::class,'exam'])->name('exam');
-Route::get('/blog/tin-tuc/',[InterFaceController::class,'news'])->name('news');
-Route::get('/blog/nhan-su/',[InterFaceController::class,'peoples'])->name('peoples');
+Route::get('/dieu-khoan-su-dung',[InterFaceController::class,'termsUse'])->name('terms_use');
+
+Route::prefix('register')->group(function(){
+    Route::get('/',[InterFaceController::class,'register'])->name('register');
+    Route::get('/vn',[InterFaceController::class,'registerVN'])->name('register_vn');
+});
+
+Route::prefix('login')->group(function(){
+    Route::get('/',[InterFaceController::class,'login'])->name('login');
+    Route::get('/vn',[InterFaceController::class,'loginVN'])->name('login_vn');
+});
+
+Route::prefix('forget-password')->group(function(){
+    Route::get('/',[InterFaceController::class,'forgetPassword'])->name('forget_password');
+    Route::get('/vn',[InterFaceController::class,'forgetPasswordVN'])->name('forget_password_vn');
+});
+
+Route::prefix('blog')->group(function(){
+    Route::get('/',[InterFaceController::class,'blog'])->name('blog');
+    Route::get('/micromanagement-la-gi/',[InterFaceController::class,'blogMicromanagement'])->name('blog_micromanagement');
+    Route::get('/equity-theory-la-gi/',[InterFaceController::class,'blogEquity'])->name('blog_equity');
+    Route::get('/lean-la-gi/',[InterFaceController::class,'blogLean'])->name('blog_lean');
+    Route::get('/dau-hieu-nhan-biet-ung-vien-khong-trung-thuc/',[InterFaceController::class,'blogTrue'])->name('blog_true');
+    Route::get('/tai-lieu/',[InterFaceController::class,'document'])->name('document');
+    Route::get('/mau-de-test/',[InterFaceController::class,'exam'])->name('exam');
+    Route::get('/tin-tuc/',[InterFaceController::class,'news'])->name('news');
+    Route::get('/nhan-su/',[InterFaceController::class,'peoples'])->name('peoples');
+});
+
