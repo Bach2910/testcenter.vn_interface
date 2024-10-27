@@ -66,7 +66,7 @@
                                     năng</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link header-item" href="#price" target="_blank">Bảng giá</a>
+                                <a class="nav-link header-item" href="/product#price" target="_blank">Bảng giá</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link header-item" href="{{route('blog')}}" target="_blank">Tài nguyên</a>
@@ -150,7 +150,7 @@
                             <a href="#" class="text-sm text-light link-item" target="_blank">Giới thiệu</a>
                         </p>
                         <p>
-                            <a href="" class="text-sm text-light link-item" target="_blank"> Điều khoản sử dụng</a>
+                            <a href="{{route('terms_use')}}" class="text-sm text-light link-item" target="_blank"> Điều khoản sử dụng</a>
                         </p>
                         <p>
                             <a href="" class="text-sm text-light link-item" target="_blank">Chính sách bảo mật</a>
