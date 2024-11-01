@@ -150,21 +150,22 @@
                             <a href="#" class="text-sm text-light link-item" target="_blank">Giới thiệu</a>
                         </p>
                         <p>
-                            <a href="{{route('terms_use')}}" class="text-sm text-light link-item" target="_blank"> Điều khoản sử dụng</a>
+                            <a href="{{route('terms_use')}}" class="text-sm text-light link-item" target="_blank"> Điều
+                                khoản sử dụng</a>
                         </p>
                         <p>
                             <a href="" class="text-sm text-light link-item" target="_blank">Chính sách bảo mật</a>
                         </p>
                         <div class="list-social-network">
-                            <a target="_blank" href="https://www.facebook.com/testcentervn"><img alt="facebook"
-                                                                                                 class="social-network-icon"
-                                                                                                 src="https://www.testcenter.vn/images/icons/facebook.png"
-                                                                                                 alt></a>
-                            <a target="_blank" href="https://twitter.com/testcenter13"><img alt="twitter"
-                                                                                            class="social-network-icon"
-                                                                                            src="https://www.testcenter.vn/images/icons/twitter.png"
-                                                                                            alt></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/testcenter-topcv-622191202/"><img
+                            <a target="_blank" href=""><img alt="facebook"
+                                                            class="social-network-icon"
+                                                            src="https://www.testcenter.vn/images/icons/facebook.png"
+                                                            alt></a>
+                            <a target="_blank" href=""><img alt="twitter"
+                                                            class="social-network-icon"
+                                                            src="https://www.testcenter.vn/images/icons/twitter.png"
+                                                            alt></a>
+                            <a target="_blank" href=""><img
                                     alt="linkedin" class="social-network-icon"
                                     src="https://www.testcenter.vn/images/icons/linkedin.png" alt></a>
                         </div>
@@ -295,7 +296,6 @@
                 }
             });
         }
-
         const owlHandler = {
             dots: document.getElementsByClassName('owl-dot'),
             prevPage() {

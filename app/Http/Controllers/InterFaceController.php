@@ -20,32 +20,32 @@ class InterFaceController extends \App\Http\Controllers\Controller
 
     public function register()
     {
-        return view('account_pages.registers.register');
+        return view('account_pages.register');
     }
 
     public function login()
     {
-        return view('account_pages.logins.login');
+        return view('account_pages.login');
     }
 
     public function forgetPassword()
     {
-        return view('account_pages.forget_passwords.forget_password');
+        return view('account_pages.forget_password');
     }
 
     public function registerVN()
     {
-        return view('account_pages.registers.register_vn');
+        return view('account_pages.register_vn');
     }
 
     public function loginVN()
     {
-        return view('account_pages.logins.login_vn');
+        return view('account_pages.login_vn');
     }
 
     public function forgetPasswordVN()
     {
-        return view('account_pages.forget_passwords.forget_password_vn');
+        return view('account_pages.forget_password_vn');
     }
 
     public function blog()
@@ -70,13 +70,13 @@ class InterFaceController extends \App\Http\Controllers\Controller
     public function termsUse(){
         return view('footer_pages.terms_of_service');
     }
-    public function paginateArticles($data, $viewName, $variableName = 'articles')
+    public function paginate($data, $viewName, $variableName = 'articles')
     {
-        $collection = collect($data);
+        $paginate = collect($data);
         $perPage = 5;
         $currentPage = LengthAwarePaginator::resolveCurrentPage();
-        $currentPageItems = $collection->slice(($currentPage - 1) * $perPage, $perPage)->values();
-        $paginated = new LengthAwarePaginator($currentPageItems, $collection->count(), $perPage);
+        $currentPageItems = $paginate->slice(($currentPage - 1) * $perPage, $perPage)->values();
+        $paginated = new LengthAwarePaginator($currentPageItems, $paginate->count(), $perPage);
         $paginated->setPath(request()->url());
 
         return view($viewName, [$variableName => $paginated]);
@@ -94,7 +94,7 @@ class InterFaceController extends \App\Http\Controllers\Controller
         }
 
         // Gọi phương thức chung
-        return $this->paginateArticles($articles, 'components_blog.document','articles');
+        return $this->paginate($articles, 'components_blog.document','articles');
     }
 
     public function exam()
@@ -109,7 +109,7 @@ class InterFaceController extends \App\Http\Controllers\Controller
             ];
         }
 
-        return $this->paginateArticles($exams, 'components_blog.exam','exams');
+        return $this->paginate($exams, 'components_blog.exam','exams');
     }
 
     public function news()
@@ -124,7 +124,7 @@ class InterFaceController extends \App\Http\Controllers\Controller
             ];
         }
 
-        return $this->paginateArticles($news, 'components_blog.news','news');
+        return $this->paginate($news, 'components_blog.news','news');
     }
 
     public function peoples()
@@ -139,6 +139,6 @@ class InterFaceController extends \App\Http\Controllers\Controller
             ];
         }
 
-        return $this->paginateArticles($peoples, 'components_blog.people','peoples');
+        return $this->paginate($peoples, 'components_blog.people','peoples');
     }
 }

@@ -47,27 +47,25 @@
     display: flex;
     justify-content: center;
     border-radius: 5px;
+    background-color: #ffffff!important;
 }
-
 .features {
     background-color: #EDF8FF5C;
 }
 
 .features-box {
-    background-color: #ffffff;
+    background-color: #ffffff!important;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 24px;
 }
-
 .group-features {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
 }
-
 .about-us {
     background: linear-gradient(180deg, rgba(197, 232, 250, 0.1) 0%, rgba(237, 248, 255, 0.36) 100%);
 }

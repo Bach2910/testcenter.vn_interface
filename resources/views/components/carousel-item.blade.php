@@ -5,7 +5,7 @@
             class="d-block mx-auto"></div>
     <div class="title">
         <div class="link-button">
-            <a href="{{$link}}" type="submit">{{$title}}</a>
+            <a href="{{$link}}" class="button-link" type="submit">{{$title}}</a>
         </div>
         <a href="{{$link_title}}">{{$description}}</a>
     </div>

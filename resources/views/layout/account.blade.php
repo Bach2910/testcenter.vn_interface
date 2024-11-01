@@ -19,68 +19,69 @@
             <div id="exampleCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner slide h-100">
                     <div class="carousel-item h-100 active">
-                        <img src="https://app.testcenter.vn/images/auth/online-courses.png"
-                                                    alt="Image 1"
-                                                    class="img-fluid">
+                        <img src="{{asset('image/auth/online-courses.png')}}"
+                             alt="Image 1"
+                             class="img-fluid">
                         <h2 class="item-heading">Tự động tổng hợp kết quả</h2>
-                        <p class="item-text">Hệ thống tự động chấm điểm hỗ trợ tối đa việc lọc kết quả của từng thí sinh. Tổng hợp kết quả
+                        <p class="item-text">Hệ thống tự động chấm điểm hỗ trợ tối đa việc lọc kết quả của từng thí
+                            sinh. Tổng hợp kết quả
                             nhanh chóng, giúp tiết kiệm thời gian, giảm thiểu công sức và hạn chế tối đa sai sót.</p>
                     </div>
-                    <div class="carousel-item h-100">
-                            <img src="https://app.testcenter.vn/images/auth/report.png" alt="Image 2"
-                                 class="img-fluid">
-                        <h2 class="item-heading">Tạo bài Test dễ dàng</h2>
-                        <p class="item-text">Dễ dàng tạo bài kiểm tra online không giới hạn số lượng với nhiều dạng câu hỏi khác nhau:
-                            trắc
-                            nghiệm, đúng/sai, tự luận, matching, điền vào chỗ trống, câu hỏi nhóm.... đáp ứng hầu hết
-                            nhu
-                            cầu của các vị trí trong mọi ngành nghề, lĩnh vực.</p>
-                    </div>
-                    <div class="carousel-item h-100">
-                            <img src="https://app.testcenter.vn/images/auth/e-learning.png" alt="Image 3"
-                                 class="img-fluid">
-                        <h2 class="item-heading">Đánh giá năng lực dựa trên dữ liệu cụ thể</h2>
-                        <p class="item-text">Đánh giá năng lực ứng viên/nhân viên trên nhiều khía cạnh thông qua các bài test online. Hỗ
-                            trợ
-                            tạo form mẫu đánh giá ứng viên sau phỏng vấn, nhằm đưa ra các quyết định chính xác trong
-                            tuyển
-                            dụng & quản trị nhân sự. Đảm bảo tính công bằng, nhất quán trong quy trình đánh giá.</p>
-                    </div>
+                    @include('components.carousel_inner',[
+                        'img' => asset('image/auth/e-learning.png'),
+                        'heading' => 'Tạo bài Test dễ dàng',
+                        'description' => 'Dễ dàng tạo bài kiểm tra online không giới hạn số lượng với nhiều dạng câu hỏi khác nhau:
+        trắc
+        nghiệm, đúng/sai, tự luận, matching, điền vào chỗ trống, câu hỏi nhóm.... đáp ứng hầu hết
+        nhu
+        cầu của các vị trí trong mọi ngành nghề, lĩnh vực.'
+])
+                    @include('components.carousel_inner',[
+                        'img' => asset('image/auth/report.png'),
+                        'heading' => 'Đánh giá năng lực dựa trên dữ liệu cụ thể',
+                        'description' => 'Đánh giá năng lực ứng viên/nhân viên trên nhiều khía cạnh thông qua các bài test online. Hỗ
+        trợ
+        tạo form mẫu đánh giá ứng viên sau phỏng vấn, nhằm đưa ra các quyết định chính xác trong
+        tuyển
+        dụng & quản trị nhân sự. Đảm bảo tính công bằng, nhất quán trong quy trình đánh giá.'
+])
                 </div>
                 <!-- Carousel controls -->
                 <div class="carousel-controls">
-                    <a class="carousels-control-prev" role="button" style="margin-left: 40px" type="button" data-bs-target="#exampleCarousel"
-                            data-bs-slide="prev">
+                    <a class="carousels-control-prev" role="button" style="margin-left: 40px" type="button"
+                       data-bs-target="#exampleCarousel"
+                       data-bs-slide="prev">
                         <span class="carousels-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
                         <span class="visually-hidden">Previous</span>
                     </a>
-                    <a class="carousels-control-next" role="button" style="margin-right: 40px" type="button" data-bs-target="#exampleCarousel"
-                            data-bs-slide="next">
+                    <a class="carousels-control-next" role="button" style="margin-right: 40px" type="button"
+                       data-bs-target="#exampleCarousel"
+                       data-bs-slide="next">
                         <span class="carousels-control-next-icon" aria-hidden="true"><i
                                 class="fas fa-chevron-right"></i></span>
                         <span class="visually-hidden">Next</span>
                     </a>
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#exampleCarousel"
-                                data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#exampleCarousel" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#exampleCarousel" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#exampleCarousel"
+                                data-bs-slide-to="0" class="active button-slide" aria-current="true" aria-label="Slide 1"></li>
+                        <li data-bs-target="#exampleCarousel" class="button-slide" data-bs-slide-to="1"
+                                aria-label="Slide 2"></li>
+                        <li data-bs-target="#exampleCarousel" class="button-slide" data-bs-slide-to="2"
+                                aria-label="Slide 3"></li>
+                    </ol>
                 </div>
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 box-action">
             <div class="card">
-                <div class="country mb-5 mb-md-5 w-100">
+                <div class="country mb-5 mb-md-5">
                     @yield('country')
                 </div>
-                <div class="logo text-center mb-4 mb-md-4 w-100"><img
-                        src="https://app.testcenter.vn/images/logo/new_logo.png" alt="icon">
+                <div class="text-center mb-2 mb-md-4"><img class="img-responsive"
+                                                           src="{{asset('image/logo/new_logo.png')}}" alt="icon">
                 </div>
-                <div class="mb-2 mb-md-4 auth-title w-100">
-                    <h3>@yield('title')</h3>
+                <div class="text-center mb-2 mb-md-4 ">
+                    <h2 class="auth-title">@yield('title')</h2>
                 </div>
                 <form action method="POST" role="form">
                     @yield('form')

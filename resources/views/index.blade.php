@@ -24,7 +24,7 @@
                                 </a>
                             </div>
                             <div>
-                                <a href="/blog" target="_blank">
+                                <a href="{{route('blog')}}" target="_blank">
                                     <button type="button" class="btn btn-outline-primary btn-more-infor">
                                         Tìm hiểu thêm
                                     </button>
@@ -139,13 +139,11 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 container-content">
                             <div class="box-container">
-                                <div class="d-flex flex-column align-items-center">
-                                    @include('components.group_features',[
-                                        'title' => '1. Ngân hàng 300+ đề thi mẫu',
-                                        'description' => '300+ đề thi được xây dựng trên tiêu chuẩn quốc tế: quiz trắc nghiệm tính cách, trắc nghiệm disc, test trí thông minh IQ, EQ, đánh giá năng lực chuyên môn (PHP online test, test Marketing, Sales, Kế toán - Tài chính,…) phù hợp với nhiều mô hình doanh nghiệp khác nhau.',
-                                        'img' => asset('image/card/image7.png')
-                                    ])
-                                </div>
+                                @include('components.group_features',[
+                                    'title' => '1. Ngân hàng 300+ đề thi mẫu',
+                                    'description' => '300+ đề thi được xây dựng trên tiêu chuẩn quốc tế: quiz trắc nghiệm tính cách, trắc nghiệm disc, test trí thông minh IQ, EQ, đánh giá năng lực chuyên môn (PHP online test, test Marketing, Sales, Kế toán - Tài chính,…) phù hợp với nhiều mô hình doanh nghiệp khác nhau.',
+                                    'img' => asset('image/card/image7.png')
+                                ])
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 container-content">
@@ -380,16 +378,11 @@
 
                                 @include('components.owl_items',[
                                     'link' => route('blog_true'),
-                                    'img' => asset('image/card/iq-va-eq-cai-nao-quan-trong-hon-testcenter.jpg'),
-                                    'descriptionIMG' => 'IQ và EQ cái
-                                            nào quan trọng hơn? Chọn yếu tố gì trong tuyển dụng',
+                                    'img' => asset('image/resources/paying-1438142_1920.jpeg'),
+                                    'descriptionIMG' => 'Chia sẻ phần mềm tạo bài test nhân viên QC chuyên nghiệp nhất',
                                     'linkTitle' => route('blog_true'),
-                                    'title' => 'IQ và EQ cái
-                                            nào quan trọng hơn? Chọn yếu tố gì trong tuyển dụng',
-                                    'description' =>  'IQ và EQ đã trở thành hai khái niệm quan trọng trong lĩnh vực tuyển
-                                    dụng nhân sự. Tuy vậy, rất nhiều nhà tuyển dụng vẫn phân vân không
-                                    biết IQ và EQ cái nào quan trọng hơn trong quá trình đánh giá ứng
-                                    viên. Nếu bạn cũng đang tìm hiểu vấn đề IQ và [&hellip;]',
+                                    'title' => 'Bộ phận QC đóng vai trò khá quan trọng, giúp thúc đẩy sự phát triển của doanh nghiệp, thông qua việc đảm bảo về chất lượng sản phẩm. Vậy, nhân viên QC là gì? Đâu là phần mềm tạo bài test nhân viên QC hiệu quả? Mời bạn cùng Testcenter khám phá trong bài viết dưới đây nhé.',
+                                    'description' => 'Chia sẻ phần mềm tạo bài test nhân viên QC chuyên nghiệp nhất',
                                     'linkButton' => route('blog')
                                 ])
 
@@ -411,35 +404,22 @@
 
                                 @include('components.owl_items',[
                                         'link' => route('blog_true'),
-                                        'img' => asset('image/card/iq-va-eq-cai-nao-quan-trong-hon-testcenter.jpg'),
-                                        'descriptionIMG' => 'IQ và EQ cái
-                                                nào quan trọng hơn? Chọn yếu tố gì trong tuyển dụng',
+                                        'img' => asset('image/resources/batchsale-3701777_1920.jpeg'),
+                                        'descriptionIMG' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thủ kho￼',
                                         'linkTitle' => route('blog_true'),
-                                        'title' => 'IQ và EQ cái
-                                                nào quan trọng hơn? Chọn yếu tố gì trong tuyển dụng',
-                                        'description' =>  'IQ và EQ đã trở thành hai khái niệm quan trọng trong lĩnh vực tuyển
-                                        dụng nhân sự. Tuy vậy, rất nhiều nhà tuyển dụng vẫn phân vân không
-                                        biết IQ và EQ cái nào quan trọng hơn trong quá trình đánh giá ứng
-                                        viên. Nếu bạn cũng đang tìm hiểu vấn đề IQ và [&hellip;]',
+                                        'title' => 'Khi tuyển dụng, không ít doanh nghiệp yêu cầu nhân viên làm các bài test để đánh giá năng lực. Nhân viên thủ kho cũng không ngoại lệ, thông qua bài test nhân viên thủ kho nhà tuyển dụng có thể đánh giá mức độ phù hợp của nhân viên với vị trí đang tuyển. Ở bài viết này, Testcenter sẽ chia sẻ phần mềm thông minh tạo bài test nhân viên thủ kho cho nhà tuyển dụng.',
+                                        'description' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thủ kho￼',
                                         'linkButton' => route('blog')
                                     ])
-
-
                                 @include('components.owl_items',[
                                          'link' => route('blog_true'),
-                                         'img' => asset('image/card/iq-va-eq-cai-nao-quan-trong-hon-testcenter.jpg'),
-                                         'descriptionIMG' => 'IQ và EQ cái
-                                                 nào quan trọng hơn? Chọn yếu tố gì trong tuyển dụng',
+                                         'img' => asset('image/resources/batchbusinesswoman-571153_1920.jpeg'),
+                                         'descriptionIMG' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thu mua',
                                          'linkTitle' => route('blog_true'),
-                                         'title' => 'IQ và EQ cái
-                                                 nào quan trọng hơn? Chọn yếu tố gì trong tuyển dụng',
-                                         'description' =>  'IQ và EQ đã trở thành hai khái niệm quan trọng trong lĩnh vực tuyển
-                                         dụng nhân sự. Tuy vậy, rất nhiều nhà tuyển dụng vẫn phân vân không
-                                         biết IQ và EQ cái nào quan trọng hơn trong quá trình đánh giá ứng
-                                         viên. Nếu bạn cũng đang tìm hiểu vấn đề IQ và [&hellip;]',
+                                         'title' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thu mua',
+                                         'description' =>  'Khi tuyển dụng, không ít nhà quản lý cho ứng viên làm các bài test chuyên môn và test tính cách để đánh giá năng lực của nhân viên, nhằm chọn ra nhân viên phù hợp với vị trí đang tuyển dụng. Vị trí nhân viên thu mua cũng không phải là ngoại lệ. ',
                                          'linkButton' => route('blog')
                                      ])
-
                             </div>
                         </div>
                     </div>

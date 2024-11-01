@@ -2,7 +2,7 @@
     <div class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative h-100">
         <div class="img-wrapper">
             <img
-                src="{{asset('image/resources/tuyen-mass-la-gi-testcenter-324x235.jpg')}}"
+                src="{{$img}}"
                 alt="Micromanagement image">
         </div>
         <div class="item-small-detail">
