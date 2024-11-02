@@ -217,7 +217,7 @@
                     <div style="color: #2B4AA0">
                         <a href="" style="color: #2B4AA0" target="_blank">
                             <div class="d-flex justify-content-center align-items-center">
-                                <div><a href="{{route('blog')}}">Tìm hiểu thêm</a></div>
+                                <div><a href="{{route('blog')}}" style="color:#2B4AA0">Tìm hiểu thêm</a></div>
                                 <div class="ml-1"><img
                                         src="{{asset('image/card/arrow-right.png')}}"
                                         alt="testcenter"></div>
