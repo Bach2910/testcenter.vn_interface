@@ -33,9 +33,11 @@
     margin-right: -15px;
     margin-left: -15px;
 }
+
 .product-section .product-section-intro .row .product-section-intro-left .highlight {
     color: #2C4A9F !important;
 }
+
 .product-section .product-section-intro .row .product-section-intro-right {
     position: absolute;
     right: 125px;
@@ -53,11 +55,13 @@
 .product-section-price {
     padding: 1em 1em 1.5em !important;
 }
+
 .product-section-price .row .product-section-price-box {
     margin-top: 15px !important;
     margin-left: 15px !important;
     gap: 10px !important;
 }
+
 .product-section-price .row .product-section-price-box-primary {
     background: #2b4aa0 !important;
     color: #fff !important;
@@ -65,6 +69,7 @@
     width: 27% !important;
     margin-left: 0 !important;
 }
+
 .product-section-price .row .product-section-price-box-primary .info-color {
     color: #57d7ff !important;
 }
@@ -184,30 +189,38 @@
         box-shadow: none;
         padding: 0px;
     }
+
     .features-box {
         background-color: rgba(237, 248, 255, 0.3607843137);
     }
+
     .branch-container {
         padding: 10px 50px 10px 50px;
     }
+
     #main-title {
         font-size: 24px;
         padding: 0px 30px 0px 30px;
     }
+
     .main-description {
         font-size: 14px;
     }
+
     .title-section {
         font-size: 19px;
     }
+
     .title {
         font-size: 14px;
         text-align: center;
     }
+
     .second-des {
         margin-top: 25px;
     }
 }
+
 #main-title {
     font-size: 2rem;
 }
@@ -221,29 +234,37 @@
         box-shadow: none;
         padding: 0px;
     }
+
     .features-box {
         background-color: rgba(237, 248, 255, 0.3607843137);
     }
+
     .branch-container {
         padding: 10px 50px 10px 50px;
     }
+
     #main-title {
         font-size: 24px;
     }
+
     .main-description {
         font-size: 14px;
     }
+
     .title-section {
         font-size: 19px;
     }
+
     .title {
         font-size: 14px;
         text-align: center;
     }
+
     .second-des {
         margin-top: 25px;
     }
 }
+
 .text-about {
     font-size: 15px;
     line-height: 20px;
@@ -282,10 +303,8 @@
 
 li {
     background: 0 0;
-    list-style: none;
     line-height: 1.6;
     margin: 0;
-    overflow: hidden;
 }
 
 section {
@@ -319,10 +338,12 @@ section {
     color: inherit;
     text-decoration: none;
 }
+
 .table-content a:hover, .table-content a:focus {
     text-decoration: none;
     color: #2C4A9F;
 }
+
 .table-content h2 {
     font-size: 1.5rem;
     color: #0a335d !important;
@@ -331,12 +352,22 @@ section {
     line-height: 1.2;
 }
 
+.table-content li {
+    background: 0 0;
+    list-style: none;
+    line-height: 1.6;
+    margin: 0;
+    overflow: hidden;
+}
+
 .term-of-use-content a {
     color: inherit;
 }
+
 .term-of-use-content .high-light {
     color: #0a8ed2;
 }
+
 .term-of-use-content h2 {
     font-size: 1.5rem;
     color: #0a335d !important;
@@ -344,6 +375,7 @@ section {
     font-weight: 500;
     line-height: 1.2;
 }
+
 .term-of-use-content h3 {
     color: #0e1333 !important;
     font-size: 1.2rem;

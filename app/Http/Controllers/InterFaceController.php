@@ -67,9 +67,17 @@ class InterFaceController extends \App\Http\Controllers\Controller
     {
         return view('pages.content3');
     }
-    public function termsUse(){
+
+    public function termsUse()
+    {
         return view('footer_pages.terms_of_service');
     }
+
+    public function privacyPolicy()
+    {
+        return view('footer_pages.policy_warning');
+    }
+
     public function paginate($data, $viewName, $variableName = 'articles')
     {
         $paginate = collect($data);
@@ -81,6 +89,7 @@ class InterFaceController extends \App\Http\Controllers\Controller
 
         return view($viewName, [$variableName => $paginated]);
     }
+
     public function document()
     {
         $articles = [];
@@ -94,7 +103,7 @@ class InterFaceController extends \App\Http\Controllers\Controller
         }
 
         // Gọi phương thức chung
-        return $this->paginate($articles, 'components_blog.document','articles');
+        return $this->paginate($articles, 'components_blog.document', 'articles');
     }
 
     public function exam()
@@ -109,7 +118,7 @@ class InterFaceController extends \App\Http\Controllers\Controller
             ];
         }
 
-        return $this->paginate($exams, 'components_blog.exam','exams');
+        return $this->paginate($exams, 'components_blog.exam', 'exams');
     }
 
     public function news()
@@ -124,7 +133,7 @@ class InterFaceController extends \App\Http\Controllers\Controller
             ];
         }
 
-        return $this->paginate($news, 'components_blog.news','news');
+        return $this->paginate($news, 'components_blog.news', 'news');
     }
 
     public function peoples()
@@ -139,6 +148,6 @@ class InterFaceController extends \App\Http\Controllers\Controller
             ];
         }
 
-        return $this->paginate($peoples, 'components_blog.people','peoples');
+        return $this->paginate($peoples, 'components_blog.people', 'peoples');
     }
 }

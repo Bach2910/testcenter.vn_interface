@@ -6,7 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [InterFaceController::class, 'index'])->name('index');
 Route::get('/product',[InterFaceController::class,'product'])->name('product');
-Route::get('/dieu-khoan-su-dung',[InterFaceController::class,'termsUse'])->name('terms_use');
+Route::get('/dieu-khoan-su-dung/',[InterFaceController::class,'termsUse'])->name('terms_use');
+Route::get('/chinh-sach-bao-mat/',[InterFaceController::class,'privacyPolicy'])->name('privacy_policy');
 
 Route::prefix('register')->group(function(){
     Route::get('/',[InterFaceController::class,'register'])->name('register');

@@ -213,12 +213,10 @@
 
 li {
     background: 0 0;
-    list-style: none;
     line-height: 1.6;
     margin: 0;
     overflow: hidden;
 }
-
 section {
     scroll-margin-top: 97px;
 }
@@ -259,6 +257,13 @@ section {
         margin-bottom: .5rem;
         font-weight: 500;
         line-height: 1.2;
+    }
+    li{
+        background: 0 0;
+        list-style: none;
+        line-height: 1.6;
+        margin: 0;
+        overflow: hidden;
     }
 }
 .term-of-use-content{

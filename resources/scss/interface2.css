@@ -282,7 +282,6 @@
 
 li {
   background: 0 0;
-  list-style: none;
   line-height: 1.6;
   margin: 0;
   overflow: hidden;
@@ -329,6 +328,13 @@ section {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+}
+.table-content li {
+  background: 0 0;
+  list-style: none;
+  line-height: 1.6;
+  margin: 0;
+  overflow: hidden;
 }
 
 .term-of-use-content a {

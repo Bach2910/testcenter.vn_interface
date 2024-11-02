@@ -5,6 +5,7 @@
     <meta name="csrf-token" content="dW9iCF8F65jkG12DHxro5nox0GDug83rVR2pjmqD">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{{asset('css/interface2.css')}}">
+    @vite('resources/js/interface2.js')
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-45CCW5L16C"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -154,7 +155,7 @@
                                 khoản sử dụng</a>
                         </p>
                         <p>
-                            <a href="" class="text-sm text-light link-item" target="_blank">Chính sách bảo mật</a>
+                            <a href="{{route('privacy_policy')}}" class="text-sm text-light link-item" target="_blank">Chính sách bảo mật</a>
                         </p>
                         <div class="list-social-network">
                             <a target="_blank" href=""><img alt="facebook"
