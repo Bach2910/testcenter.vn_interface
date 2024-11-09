@@ -68,10 +68,10 @@
                'desc' => 'Testcenter - Đối với bất kỳ công ty hay doanh nghiệp, cơ cấu tổ chức doanh nghiệp đóng vai trò rất quan trọng. Nó...'
            ])
         @include('components.blog_item',[
-                'img' => asset('image/resources/tuyen-mass-la-gi-testcenter.jpg'),
+                'img' => asset('image/resources/bo-tri-nhan-su-324x160.jpg'),
                 'name' => 'Tài liệu',
-                'title' =>'Sơ đồ tổ chức doanh nghiệp là gì? – Cách tạo sơ đồ tổ chức nhanh chóng',
-                'desc' =>'Testcenter - Đối với bất kỳ công ty hay doanh nghiệp, cơ cấu tổ chức doanh nghiệp đóng vai trò rất quan trọng. Nó...',
+                'title' =>'Bỏ túi “bí kíp” bố trí nhân sự hiệu quả dành...',
+                'desc' =>'Testcenter - Đối với doanh nghiệp, tuyển dụng được nhân sự giỏi và tài năng đã là một việc khó nhưng để bố trí...',
             ])
     </div>
     <div class="picture1 container pt-5 pb-5 td-pb-row">
@@ -424,19 +424,25 @@
         </div>
         <div class="card-main">
             @include('components.blog_item', [
-            'img' => asset('image/resources/nang-luc-nghe-nghiep-324x160.jpeg'),
+            'img' => asset('image/resources/an-toan-thong-tin-696x464.png'),
             'name' => 'Tài liệu',
             'title' => 'Bài test DISC – Công cụ “sắc bén” của nhà tuyển dụng',
             'desc' => 'Bài test DISC và các bài test online khác đang trở thành một trong những công cụ giúp đánh giá ứng viên hiệu quả....'
         ])
             @include('components.blog_item', [
-                'img' => asset('image/resources/cats1-1-1-324x160.jpg'),
+                'img' => asset('image/resources/chien-luoc-nhan-su-696x464.jpg'),
                 'name' => 'Tài liệu',
-                'title' => '3 kỹ năng tuyển dụng hiệu quả cần trang bị trong thời đại số',
-                'desc' => 'Có thể nói tài sản đắt giá nhất của mỗi doanh nghiệp là nhân sự và kỹ năng tuyển dụng hiệu quả chính là...'
+                'title' => '4 bước hoạch định chiến lược nhân sự hiệu quả cho mọi nhà quản lý',
+                'desc' => 'Chiến lược nhân sự trở thành ưu tiên hàng đầu của mọi doanh nghiệp. Đây là yếu tố quyết định nhiều đến sự thành...'
             ])
             @include('components.blog_item', [
-                'img' => asset('image/resources/cats1-1-1-324x160.jpg'),
+                'img' => asset('image/resources/mau-danh-gia-thu-viec-1-696x464.jpeg'),
+                'name' => 'Tài liệu',
+                'title' => '3 mẫu đánh giá thử việc hiệu quả áp dụng cho doanh nghiệp',
+                'desc' => 'Mẫu đánh giá thử việc hay form đánh giá nhân viên thử việc là một trong những yếu tố quan trọng giúp các nhà...'
+            ])
+            @include('components.blog_item', [
+                'img' => asset('image/resources/thu-cam-on-nhan-vien-nghi-viec-696x435.jpg'),
                 'name' => 'Tài liệu',
                 'title' => 'NHÓM TÍNH CÁCH INFJ – NGƯỜI CHE CHỞ',
                 'desc' => 'Có rất ít người mang tính cách này, chỉ chiếm khoảng 1% dân số và họ mang trong mình khá nhiều đặc điểm bất...'
