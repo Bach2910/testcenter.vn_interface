@@ -2,9 +2,11 @@
     <div class="row g-0 tb-row-8 td-pb-row mb-5 position-relative">
         <div class="dad">
             <div class="img-wrapper">
-                <img
-                    src="{{$img}}"
-                    alt="Micromanagement image">
+                <a href="{{route('blog_equity')}}">
+                    <img
+                        src="{{$img}}"
+                        alt="Micromanagement image" class="animation">
+                </a>
             </div>
             <div class="item-detail">
                 <div class="title-mb2">

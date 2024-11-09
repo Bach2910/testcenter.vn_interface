@@ -1,9 +1,11 @@
 <div class="row g-0 td-pb-row td-mb-5 tb-row-8  position-relative">
     <div class="dad">
         <div class="img-wrapper">
+            <a href="{{route('blog_micromanagement')}}">
             <img
                 src="{{$img}}"
-                class="img-fluid" alt="Micromanagement image">
+                class="img-fluid animation" alt="Micromanagement image">
+            </a>
         </div>
         <div class="item-detail">
             <div class="title-mb2">

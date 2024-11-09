@@ -40,6 +40,12 @@
   position: absolute;
   right: 125px;
 }
+.product-section .product-section-intro-mobi {
+  display: none;
+}
+.product-section .product-section-intro-mobi .product-section-intro-left .highlight {
+  color: #2C4A9F !important;
+}
 
 .product-container-fluid {
   padding-left: 24px;
@@ -69,6 +75,30 @@
   color: #57d7ff !important;
 }
 
+@media only screen and (max-width: 992px) {
+  .product-section-intro-right {
+    right: 50px !important;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .pc-hidden {
+    display: block !important;
+  }
+  .body-container-product {
+    background-image: none !important;
+  }
+  .product-section .product-section-intro-pc {
+    display: none;
+  }
+  .product-section .product-section-intro-mobi {
+    display: block !important;
+  }
+  .product-section .product-section-intro-mobi .product-section-intro-left h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
 .body-container {
   background-image: url("/image/card/group_8707.png");
   background-size: contain;

@@ -2,7 +2,7 @@
     <div class="slide-img"><img
             src="{{$img}}"
             alt="Image 1"
-            class="d-block mx-auto"></div>
+            class="d-block mx-auto img-fluid animation"></div>
     <div class="title">
         <div class="link-button">
             <a href="{{$link}}" class="button-link" type="submit">{{$title}}</a>

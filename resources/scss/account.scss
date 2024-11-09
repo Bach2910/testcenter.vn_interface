@@ -1,20 +1,25 @@
 @import "variables";
-*{
+
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    min-height: 100vh;//nhớ đoạn này sẽ lấy theo min theo view của màn hình
-    height: auto;//với chiều cao để auto
+    min-height: 100vh; //nhớ đoạn này sẽ lấy theo min theo view của màn hình
+    height: auto; //với chiều cao để auto
 }
-.slide{
+
+.slide {
     height: 100%;
     background: #f0f6ff !important;
 }
+
 .left-div {
     width: 50%;
     padding-right: 40px;
@@ -28,11 +33,13 @@ body{
     background: #fff;
     width: 100%;
 }
+
 .login-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
     .topCv-logo {
         display: flex;
         align-items: center;
@@ -42,7 +49,7 @@ body{
         border-radius: 5px;
         margin-bottom: 10px;
         width: 100%; /* Điều chỉnh chiều rộng của logo */
-        color:#1a4c9d;
+        color: #1a4c9d;
         font-weight: bold;
     }
 
@@ -51,6 +58,7 @@ body{
         height: auto;
 
     }
+
     .topCv-login-button {
         background-color: #2C4A9F;
         font-weight: bold;
@@ -68,31 +76,35 @@ body{
     .topCv-login-button:hover {
         background-color: #1e3a6f; /* Màu khi hover */
     }
-    .line{
+
+    .line {
         width: 100%;
         margin-bottom: 10px;
+
         .or-separator {
             position: relative;
-            top:-14px;
+            top: -14px;
             font-size: 14px;
             color: #888;
             margin: 30px 0 30px 0;
             z-index: 1;
             background-color: white;
-            padding:5px;
+            padding: 5px;
         }
     }
+
     .register-link {
         font-size: 14px;
         color: #333;
         margin: 30px 0 30px 0;
-        a{
+        a {
             text-decoration: none;
-            color:#2C4A9F;
+            color: #2C4A9F;
             font-weight: bold;
         }
     }
 }
+
 .country {
     margin-bottom: 100px;
     display: flex;
@@ -139,6 +151,7 @@ body{
         cursor: pointer;
 
     }
+
     .option-img {
         width: 1.75rem !important;
         height: 1.25rem !important;
@@ -273,13 +286,13 @@ input[type="password"], input[type="text"], input[type="email"] {
 .forgot {
     align-items: start;
     margin-bottom: 10px;
-    a{
+    a {
         font-size: 15px;
         text-decoration: none;
-        font-weight: 400;
-        color:#2B4AA0;
+        font-weight: 700!important; 
+        color: #2B4AA0;
     }
-    a:hover{
+    a:hover {
         text-decoration: underline;
     }
 }
@@ -317,6 +330,7 @@ form {
 }
 
 .note-pass {
+    color: rgb(149, 155, 165);
     width: 100%;
     text-align: left;
     font-size: 1.0rem !important;
@@ -329,41 +343,63 @@ form {
     text-align: center;
 
 }
+
 @media (max-width: 414px) {
     .box-action {
         display: block;
-        width: 100%;
         padding: 3rem 1rem;
     }
-    .box-slide{
+    .box-slide {
         display: none;
     }
 }
+
+@media only screen and (max-width: 576px) {
+    .box-slide {
+        display: none;
+    }
+    .box-action {
+        display: block;
+        height: 100%;
+        padding: 3rem 1rem;
+    }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .box-action {
         padding: 3rem 1rem;
     }
-    .box-slide{
+    .box-slide {
         padding: 3rem 1rem;
     }
 }
-@media only screen and (max-width: 1024px){
-    .img-responsive{
+
+@media only screen and (max-width: 1024px) {
+    .img-responsive {
         width: 80px;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .carousel-item {
+        padding: 5rem 1.5rem;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .box-action {
         padding: 2rem 0;
     }
-    .box-slide{
+    .box-slide {
         padding: 2rem 0;
     }
 }
-.box-slide{
+
+.box-slide {
     .carousel-indicators {
         position: absolute;
         bottom: -100px;
+
         li {
             background-color: #2B4AA0;
             width: 24px;
@@ -372,10 +408,19 @@ form {
         }
     }
 }
+
 .card {
-    border: none;
-    box-shadow: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid transparent;
+    border-radius: 6px;
 }
+
 .carousel-controls {
     position: absolute;
     top: -100px;
@@ -385,6 +430,7 @@ form {
     justify-content: space-between;
     align-items: center;
 }
+
 [role=button] {
     cursor: pointer;
 }
@@ -395,6 +441,7 @@ form {
     width: 3.25rem;
     height: 3.25rem;
     padding: 1rem 1.25rem;
+
     i {
         width: .813rem;
         height: 1.25rem;
@@ -402,7 +449,8 @@ form {
         color: #000;
     }
 }
-.auth-title{
+
+.auth-title {
     font-weight: 600 !important;
     font-size: 2rem !important;
     line-height: 2.375rem !important;

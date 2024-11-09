@@ -10,7 +10,7 @@
         </div>
         <h1>Nhân sự</h1>
         <div class="description">
-            <p>Nắm bắt tâm lý nhân viên, thấu hiểu thị trường lao động và cập nhật những xu hướng quản trị nhân sự mới sẽ mở ra cho doanh nghiệp “cánh cửa” chào đón nhân tài. </p>
+            <p class="text-center">Nắm bắt tâm lý nhân viên, thấu hiểu thị trường lao động và cập nhật những xu hướng quản trị nhân sự mới<br> sẽ mở ra cho doanh nghiệp “cánh cửa” chào đón nhân tài. </p>
         </div>
     </div>
     <div class="td-main-content-wrap td-container-wrap">
@@ -23,7 +23,7 @@
                                 <div class="td-module-thumb mb-2">
                                     <a href="{{ $people['url'] }}" rel="bookmark" class="td-image-wrap"
                                        title="{{ $people['title'] }}">
-                                        <img class="entry-thumb" src="{{ $people['image_url'] }}"
+                                        <img class="entry-thumb animation" src="{{ $people['image_url'] }}"
                                              alt="{{ $people['title'] }}" width="324" height="235"/>
                                     </a>
                                 </div>

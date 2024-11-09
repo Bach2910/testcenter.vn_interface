@@ -23,7 +23,7 @@
                                 <div class="td-module-thumb mb-2">
                                     <a href="{{ $new['url'] }}" rel="bookmark" class="td-image-wrap"
                                        title="{{ $new['title'] }}">
-                                        <img class="entry-thumb" src="{{ $new['image_url'] }}"
+                                        <img class="entry-thumb animation" src="{{ $new['image_url'] }}"
                                              alt="{{ $new['title'] }}" width="324" height="235"/>
                                     </a>
                                 </div>
@@ -45,7 +45,7 @@
                         @endforeach
                     </div>
                     <div class="pagination-wrapper">
-                        {{$news->links('pagination::bootstrap-5') }}
+                        {{$news->links('pagination::bootstrap-4') }}
                     </div>
                 </div>
             </div>

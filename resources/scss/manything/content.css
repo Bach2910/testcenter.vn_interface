@@ -1,3 +1,17 @@
+/* Error: Undefined variable.
+ *     ,
+ * 119 |         color: $nav-link-color;
+ *     |                ^^^^^^^^^^^^^^^
+ *     '
+ *   content.scss 119:16  root stylesheet */
 
-
-/*# sourceMappingURL=content.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a     \2577 \a 119 \2502          color: $nav-link-color;\a     \2502                 ^^^^^^^^^^^^^^^\a     \2575 \a   content.scss 119:16  root stylesheet";
+}

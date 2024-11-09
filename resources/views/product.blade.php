@@ -2,7 +2,7 @@
 @section('name','body-container-product')
 @section('main')
     <div class="container product-section">
-        <div class="mb-4 product-section-intro">
+        <div class="mb-4 product-section-intro product-section-intro-pc">
             <div class="row">
                 <div class="col-md-5 product-section-intro-left p-0 pt-3">
                     <h1><span>Tiêu chuẩn đánh giá</span><br><span
@@ -30,7 +30,37 @@
                     </div>
                 </div>
                 <div class="col-md-7 product-section-intro-right">
-                    <img src="https://www.testcenter.vn/images/products/introduction/group_8710.png" alt>
+                    <img src="{{asset('image/product/introduction/group_8710.png')}}" alt class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="mb-4 product-section-intro product-section-intro-mobi">
+            <div class="product-section-intro-left p-0 pt-3">
+                <h1 class="text-center"><span>Tiêu chuẩn đánh giá</span> <span
+                        class="highlight p-0">năng lực nhân sự</span> <span>cho doanh nghiệp</span></h1>
+                <div class="align-items-center d-flex">
+                    <img src="{{asset('image/product/group_8677.png')}}" alt class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <p>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i> Hơn 300 đề thi tuyển dụng nhân sự mẫu
+                    </p>
+                    <p>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i> Tạo bài test online nhanh chóng chỉ
+                        trong 5 phút
+                    </p>
+                    <p>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i> Công cụ quản lý năng lực ứng viên
+                        thông minh
+                    </p>
+                    <p>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i> Đánh giá năng lực làm việc của nhân
+                        viên trực quan
+                    </p>
+                </div>
+                <div class="mt-4 text-center">
+                    <a class="btn btn-primary btn-register " href="{{route('register')}}">Đăng ký miễn phí</a>
+                    <a class="btn btn-link font-weight-500 primary-color" href="{{route('blog')}}">Tìm hiểu thêm</a>
                 </div>
             </div>
         </div>
@@ -230,9 +260,10 @@
                 Bảng giá dịch vụ TestCenter.vn
             </h4>
             <div class="row">
-                <div class="col-md-3 col-12 product-section-price-box product-section-price-box-primary">
-                    <div class="product-section-price-box-header">
-                        <img src="{{asset('image/product/diamon-1.png')}}">
+                <div class="col-md-3 col-12 product-section-price-box product-section-price-box-primary"
+                     style="height: 1029.52px;">
+                    <div class="product-section-price-box-header" style="height:161.562px;">
+                        <img src="{{asset('image/product/diamond-1.png')}}">
                         <p class="text-uppercase mt-2 font-weight-500">Free</p>
                         <h3 class="font-weight-bold">Miễn phí</h3>
                         <p>Sử dụng trọn đời</p>
@@ -268,62 +299,183 @@
                     </p>
                     <a href="{{route('register')}}" class="btn btn-register btn-light">Đăng ký miễn phí</a>
                 </div>
-                @include('components.product_price_box',[
-                  'img' => asset('image/product/diamond-1.png'),
-                  'status' => 'STARTER',
-                  'price' => '3.000.000',
-                  'currency' => 'VND/năm',
-                  'text1' => 'Mở khoá toàn bộ tính năng sản phẩm',
-                  'text2' => 'Miễn phí cập nhật tính năng mới',
-                  'text3' => 'Tổ chức nhiều đợt thi cùng lúc',
-                  'text4' => '300+ bộ đề mẫu đa dạng',
-                  'text5' => '100 lượt test mỗi tháng',
-                  'text6' => 'Tối đa 1 tài khoản quản lý',
-                  'text7' => '200 người test cùng lúc',
-                  'text8' => 'Hỗ trợ trong giờ hành chính 24/7'
-              ])
-                @include('components.product_price_box',[
+                <div class="col-md-2 col-12 product-section-price-box" style="height: 1029.52px;">
+                    @include('components.product_price_box',[
                       'img' => asset('image/product/diamond-2.png'),
-                      'status' => 'BUSINESS',
-                      'price' => '25.000.000',
-                      'currency' => 'VND/năm',
-                      'text1' => 'Mở khoá toàn bộ tính năng sản phẩm',
-                      'text2' => 'Miễn phí cập nhật tính năng mới',
-                      'text3' => 'Tổ chức nhiều đợt thi cùng lúc',
-                      'text4' => '300+ bộ đề mẫu đa dạng',
-                      'text5' => '100 lượt test mỗi tháng',
-                      'text6' => 'Tối đa 3 tài khoản quản lý',
-                      'text7' => '500 người test cùng lúc',
-                      'text8' => 'Hỗ trợ trong giờ hành chính 24/7'
+                      'status' => 'STARTER',
+                      'price' => '3.000.000',
+                      'currency' => 'VND/năm'
                   ])
-                @include('components.product_price_box',[
-                     'img' => asset('image/product/diamond-3.png'),
-                     'status' => 'BUSINESS PLUS',
-                     'price' => '30.000.000',
-                     'currency' => 'VND/năm',
-                     'text1' => 'Mở khoá toàn bộ tính năng sản phẩm',
-                     'text2' => 'Miễn phí cập nhật tính năng mới',
-                     'text3' => 'Tổ chức nhiều đợt thi cùng lúc',
-                     'text4' => '300+ bộ đề mẫu đa dạng',
-                     'text5' => '100 lượt test mỗi tháng',
-                     'text6' => 'Tối đa 5 tài khoản quản lý',
-                     'text7' => '200-500 người test cùng lúc',
-                     'text8' => 'Hỗ trợ trong giờ hành chính 24/7'
-                 ])
-                @include('components.product_price_box',[
-                     'img' => asset('image/product/diamond-4.png'),
-                     'status' => 'ENTERPRISE',
-                     'price' => 'Liên hệ',
-                     'currency' => 'Liên hệ để có giá tốt nhất',
-                     'text1' => 'Mở khoá toàn bộ tính năng sản phẩm',
-                     'text2' => 'Miễn phí cập nhật tính năng mới',
-                     'text3' => 'Tổ chức nhiều đợt thi cùng lúc',
-                     'text4' => '300+ bộ đề mẫu đa dạng',
-                     'text5' => '100 lượt test mỗi tháng',
-                     'text6' => 'Tối đa 10 tài khoản quản lý',
-                     'text7' => '10.000 người test cùng lúc',
-                     'text8' => 'Hỗ trợ trong giờ hành chính 24/7'
-                 ])
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Mở khoá toàn bộ tính
+                        năng sản phẩm
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Miễn phí cập nhật tính
+                        năng mới
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Tổ chức nhiều đợt thi
+                        cùng lúc
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>300+ bộ đề mẫu đa dạng
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>100 lượt test mỗi
+                        tháng
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Tối đa 1 tài khoản
+                        quản lý
+                    </p>
+                    <p class="d-flex ">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>200 người test cùng
+                        lúc
+                    </p>
+                    <p class="d-flex pb-5">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Hỗ trợ trong giờ hành
+                        chính 24/7
+                    </p>
+                    <a href="{{route('register')}}" class="btn btn-register btn-secondary">Trải nghiệm ngay</a>
+                </div>
+                <div class="col-md-2 col-12 product-section-price-box" style="height: 1029.52px;">
+                    @include('components.product_price_box',[
+                          'img' => asset('image/product/diamond-3.png'),
+                          'status' => 'BUSINESS',
+                          'price' => '25.000.000',
+                          'currency' => 'VND/năm'
+                      ])
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Mở khoá toàn bộ tính
+                        năng sản phẩm
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Miễn phí cập nhật tính
+                        năng mới
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Tổ chức nhiều đợt thi
+                        cùng lúc
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>300+ bộ đề mẫu đa dạng
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>100 lượt test mỗi
+                        tháng
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Tối đa 3 tài khoản
+                        quản lý
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>500 người test cùng
+                        lúc
+                    </p>
+                    <p class="d-flex pb-5">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Hỗ trợ trong giờ hành
+                        chính 24/7
+                    </p>
+                    <a href="{{route('register')}}" class="btn btn-register btn-secondary">Trải nghiệm ngay</a>
+                </div>
+                <div class="col-md-2 col-12 product-section-price-box" style="height: 1029.52px;">
+                    @include('components.product_price_box',[
+                         'img' => asset('image/product/diamond-4.png'),
+                         'status' => 'BUSINESS PLUS',
+                         'price' => '50.000.000',
+                         'currency' => 'VND/năm',
+                     ])
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Mở khoá toàn bộ tính
+                        năng sản phẩm
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Miễn phí cập nhật tính
+                        năng mới
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Tổ chức nhiều đợt thi
+                        cùng lúc
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>300+ bộ đề mẫu đa dạng
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Unlimited lượt kiểm
+                        tra
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Tối đa 5 tài khoản
+                        quản lý
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>200 - 500 người test
+                        cùng lúc
+                    </p>
+
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Hướng dẫn sử dụng trực
+                        tiếp
+                    </p>
+                    <p class="d-flex pb-5">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Hỗ trợ trong giờ hành
+                        chính 24/7
+                    </p>
+                    <a href="{{route('register')}}" class="btn btn-register btn-secondary">Trải nghiệm ngay</a>
+                </div>
+                <div class="col-md-2 col-12 product-section-price-box" style="height: 1029.52px;">
+                    @include('components.product_price_box',[
+                         'img' => asset('image/product/diamond-5.png'),
+                         'status' => 'ENTERPRISE',
+                         'price' => 'Liên hệ',
+                         'currency' => 'Liên hệ để có giá tốt nhất',
+                     ])
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Mở khoá toàn bộ tính
+                        năng sản phẩm
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Miễn phí cập nhật tính
+                        năng mới
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Tổ chức nhiều đợt thi
+                        cùng lúc
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>300+ bộ đề mẫu đa dạng
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Unlimited lượt kiểm
+                        tra
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Tối đa 10 tài khoản
+                        quản lý
+                    </p>
+                    <p class="d-flex">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>10.000 người test cùng
+                        lúc
+                    </p>
+                    <p class="d-flex ">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>API tích hợp app nội
+                        bộ của Công ty
+                    </p>
+                    <p class="d-flex ">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Hướng dẫn sử dụng trực
+                        tiếp
+                    </p>
+                    <p class="d-flex ">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Hỗ trợ cài đặt trên
+                        server riêng
+                    </p>
+                    <p class="d-flex pb-5">
+                        <i class="fa fa-check-circle info-color pt-1 pr-1" aria-hidden="true"></i>Hỗ trợ trong giờ hành
+                        chính 24/7
+                    </p>
+                    <a href="{{route('register')}}" class="btn btn-register btn-secondary">Trải nghiệm ngay</a>
+                </div>
             </div>
         </div>
     </div>
@@ -350,9 +502,11 @@
                             'description' => 'Chỉ thêm vài bước nhỏ trong quá trình tuyển dụng, ứng viên có thể thấy được sự chuyên nghiệp và chỉn chu trong từng hoạt động của doanh nghiệp.'
                         ])
                     </div>
-                    <div
-                        class="col-md-5 align-items-center d-flex p-0 product-section-problem-left mobile-hidden pc-show">
-                        <img src="{{asset('image/product/benefit.png')}}" class="img-fluid"/>
+                    <div class="col-md-5 align-items-center d-flex p-0 product-section-problem-left mobile-hidden pc-show">
+                        <img src="{{asset('image/product/benefit.png')}}" class="img-fluid" alt>
+                    </div>
+                    <div class="col-md-5 align-items-center d-flex p-0 product-section-problem-left mobile-show pc-hidden pr-5 pl-5">
+                        <img src="{{asset('image/product/benefit.png')}}" class="img-fluid" alt>
                     </div>
                 </div>
             </div>
@@ -366,6 +520,58 @@
             <h4 class="font-weight-bold mb-4 mobile-hidden pc-show">TestCenter.vn vận hành như thế nào?</h4>
             <h5 class="font-weight-500 mb-4 text-center-mobile mobile-show pc-hidden">TestCenter.vn vận hành như thế
                 nào?</h5>
+            <div class="step-wrapper-mobile mobile-hidden pc-hidden">
+                <div>
+                    <div class="row">
+                        <div class="col-md-1 col-2 d-flex align-items-start ml-3 p-0 pl-2">
+                            <div class="vertical-line">
+                            </div>
+                            <div
+                                class="step-number step-number-1 text-white font-weight-500 d-flex justify-content-center align-items-center">
+                                <span>1</span>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-9">
+                            <p class="font-weight-bold">Bước 1</p>
+                            <p>
+                                Xây dựng kho đề thi dựa trên nhu cầu
+                                tuyển dụng của doanh nghiệp
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 col-2 d-flex align-items-start ml-3 p-0 pl-2">
+                            <div class="vertical-line">
+                            </div>
+                            <div
+                                class="step-number step-number-2 text-white font-weight-500 d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-9">
+                            <p class="font-weight-bold">Bước 2</p>
+                            <p>
+                                Tổ chức thi online cho ứng viên hoặc
+                                nhóm nhân sự
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 col-2 d-flex align-items-start ml-3 p-0 pl-2">
+                            <div
+                                class="step-number step-number-3 text-white font-weight-500 d-flex justify-content-center align-items-center">
+                                3
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-9">
+                            <p class="font-weight-bold">Bước 3</p>
+                            <p>
+                                Tổng hợp kết quả và xuất báo cáo file excel
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="step-wrapper mobile-hidden">
                 <div class="step-item text-center">
                     <div class="d-flex justify-content-center align-items-center">

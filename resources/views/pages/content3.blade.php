@@ -2,26 +2,25 @@
 @section('main')
     <div class="container">
         <div class="link">
-            <a href="#" class="nav-link">Trang chủ</a>>
-            <a>Tin tức</a>
+            <a href="#" class="nav-link">Trang chủ</a> > <a>Tài liệu</a>
         </div>
         <div class="first-title">
             <a class="mb-2 text-white btn btn-dark" style="font-size: 9px;width: 10%;">Tin tức</a>
-            <h3>Lean là gì? Phương pháp ứng dụng mô hình Lean để tối ưu chi phí cho doanh nghiệp</h3>
+            <h2>Lean là gì? Phương pháp ứng dụng mô hình Lean để tối ưu chi phí cho doanh nghiệp</h2>
             <h6>Bởi - </h6>
             <div class="button-inform">
-                <a type="button" class="btn btn-primary"><i class="fa-brands fa-facebook-f"></i></a>
-                <a type="button" class="btn btn-info"><i class="fa-brands fa-twitter"></i></a>
-                <a type="button" class="btn btn-success"><i class="fa-brands fa-pinterest-p"></i></a>
-                <a type="button" class="btn btn-danger"><i class="fa-brands fa-whatsapp"></i></a>
-                <a type="button" class="btn btn-warning"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a type="button" class="btn btn-dark"><i class="fa-brands fa-tumblr"></i></a>
+                <span type="button" class="facebook"><i class="fa-brands fa-facebook-f"></i></span>
+                <span type="button" class="twitter"><i class="fa-brands fa-twitter"></i></span>
+                <span type="button" class="pinterest"><i class="fa-brands fa-pinterest-p"></i></span>
+                <span type="button" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></span>
+                <span type="button" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></span>
+                <span type="button" class="tumblr"><i class="fa-brands fa-tumblr"></i></span>
             </div>
-            <h5>Nắm được khái niệm <a href=""><b>Lean là gì</b></a> sẽ giúp nhà quản trị tìm ra phương pháp để giảm
+            <p>Nắm được khái niệm <a href="{{route('blog_lean')}}"><b>Lean là gì</b></a> sẽ giúp nhà quản trị tìm ra phương pháp để giảm
                 thiểu chi phí sản xuất nhằm tối ưu lợi nhuận hiệu quả. Chi tiết về khái niệm Lean cũng như những cách
                 ứng dụng mô hình này cho tổ chức,
                 <a href=""><b>Testcenter.vn</b></a> sẽ giúp bạn khai thác sâu trong bài viết thuộc chuyên mục tin tức
-                dưới đây!</h5>
+                dưới đây!</p>
             <div class="toc-wrapper">
                 <div class="name"><h5>Table of Contents</h5>
                     <div class="icon" onclick="toggleContent()">☰</div>
@@ -78,7 +77,7 @@
             </section>
             <br>
             <section id="section1-1">
-                <h1>Nguồn gốc hình thành của mô hình Lean</h1>
+                <h3>Nguồn gốc hình thành của mô hình Lean</h3>
                 <p>Vào những năm 1980, nhiều công ty sản xuất phương Tây nhận ra rằng họ đang đánh mất thị phần với tốc
                     độ nhanh chóng vào tay các doanh nghiệp Nhật Bản. Từ đây, một cuộc nghiên cứu sự khác biệt giữa
                     Toyota – tập đoàn ô tô hàng đầu Nhật Bản – với những tổ chức đến từ khu vực Mỹ, châu Âu – đã được mở
@@ -90,7 +89,7 @@
             </section>
             <br>
             <section id="section1-2">
-                <h1>Lean là gì?</h1>
+                <h3>Lean là gì?</h3>
                 <p>Vậy, Lean là gì? Lean là mô hình quản trị doanh nghiệp theo triết lý tinh gọn có nguồn gốc từ lĩnh
                     vực sản xuất và dần được ứng dụng phổ biến trong nhiều ngành nghề khác nhau. Mô hình ra đời dựa trên
                     ý tưởng về cải thiện năng suất cũng như giảm thiểu lãng phí khi kinh doanh.</p>
@@ -100,7 +99,7 @@
             </section>
             <br>
             <section id="section1-3">
-                <h1>Sự khác biệt giữa mô hình sản xuất truyền thống với mô hình Lean là gì?</h1>
+                <h3>Sự khác biệt giữa mô hình sản xuất truyền thống với mô hình Lean là gì?</h3>
                 <p>So với mô hình sản xuất truyền thống, Lean sở hữu những điểm khác biệt rõ ràng như sau:</p>
                 <table>
                     <tr>
@@ -180,17 +179,17 @@
             </section>
             <br>
             <section id="section5-1">
-                <h1>Lỗi sản phẩm (Defects)</h1>
+                <h3>Lỗi sản phẩm (Defects)</h3>
                 <p>Defects là những sản phẩm bị lỗi trong quá trình doanh nghiệp sản xuất. Đây được xem như yếu tố gây lãng phí hàng đầu bởi chúng không hề tạo ra bất cứ giá trị nào cho tổ chức.</p>
             </section>
             <br>
             <section id="section5-2">
-                <h1>Sản xuất dư thừa (Over Production)</h1>
+                <h3>Sản xuất dư thừa (Over Production)</h3>
                 <p>Trong một số trường hợp, sản xuất dư thừa chính là nguồn lãng phí lớn nhất do hoạt động này gây nên tình trạng gia tăng tồn kho, lao động, nguyên liệu v.v.. Vấn đề này thường xảy ra với các doanh nghiệp có quy trình phân phối không cân đối hoặc sở hữu lô hàng lớn.</p>
             </section>
             <br>
             <section id="section5-3">
-                <h1>Thời gian chờ đợi (Waiting)</h1>
+                <h3>Thời gian chờ đợi (Waiting)</h3>
                 <p>Waiting là khoảng thời gian mà nhân công phải chờ đợi để một sự kiện nào đó xảy ra. Lúc này, họ sẽ không thể tạo bất cứ giá trị hữu ích nào cho doanh nghiệp, khiến quỹ thời gian trôi qua lãng phí.</p>
                 <img
                     src="https://www.testcenter.vn/blog/wp-content/uploads/2024/01/lean-la-gi-testcenter-4.jpg"
@@ -199,17 +198,17 @@
             </section>
             <br>
             <section id="section5-4">
-                <h1>Không tận dụng tài năng (Non-utilized Talent)</h1>
+                <h3>Không tận dụng tài năng (Non-utilized Talent)</h3>
                 <p>Non-utilized Talent xảy ra khi doanh nghiệp không nhận thấy và không tận dụng một cách hiệu quả những kỹ năng và khả năng mà nhân viên có thể mang lại.</p>
             </section>
             <br>
             <section id="section5-5">
-                <h1>Vận chuyển (Transportation)</h1>
+                <h3>Vận chuyển (Transportation)</h3>
                 <p>Transportation đề cập tới khoảng thời gian và công sức dùng cho việc di chuyển nguyên vật liệu hoặc hàng hóa trong nội bộ nhà máy hay giữa các địa điểm với nhau nhưng lại không tạo được giá trị gì. Vấn đề này sẽ biểu hiện rõ ràng hơn ở những doanh nghiệp quy mô lớn và hoạt động ở nhiều cơ sở.</p>
             </section>
             <br>
             <section id="section5-6">
-                <h1>Chuyển động (Motion)</h1>
+                <h3>Chuyển động (Motion)</h3>
                 <p>Motion là việc nhân viên phải dành nhiều thời gian để di chuyển từ nơi này tới nơi khác. Tuy nhiên, trong quá trình đó, họ không tạo ra giá trị cho sản phẩm/dịch vụ của doanh nghiệp.</p>
                 <img
                     src="https://www.testcenter.vn/blog/wp-content/uploads/2024/01/lean-la-gi-testcenter-5.jpg"
@@ -218,12 +217,12 @@
             </section>
             <br>
             <section id="section5-7">
-                <h1>Quy trình dư thừa (Extra Process)</h1>
+                <h3>Quy trình dư thừa (Extra Process)</h3>
                 <p>Hiện nay, một số quy trình sản xuất có tồn tại các bước không đóng góp bất cứ giá trị nào cho tổ chức. Lúc này, doanh nghiệp cần tiến hành xem xét lại khâu vận hành này để xác định bước dư thừa và tiến tới loại bỏ nhằm tối ưu <a href="#" class="high-light">hiệu suất làm việc</a> cho công ty.</p>
             </section>
             <br>
             <section id="section5-8">
-                <h1>Kho hàng (Inventory)</h1>
+                <h3>Kho hàng (Inventory)</h3>
                 <p>Mặc dù duy trì lượng hàng tồn kho nhất định là điều cần thiết trong một vài tình huống, giúp đảm bảo có thể cung ứng sản phẩm/dịch vụ đúng thời điểm cho khách hàng, vậy nhưng đây vẫn được xem như một loại lãng phí do làm tăng chi phí lưu trữ, quản lý của doanh nghiệp.</p>
             </section>
             <br>
@@ -233,12 +232,12 @@
             </section>
             <br>
             <section id="section6-1">
-                <h1>Thiết lập chiến lược mục tiêu rõ ràng</h1>
+                <h3>Thiết lập chiến lược mục tiêu rõ ràng</h3>
                 <p>Để Lean phát huy tối đa hiệu quả, trước hết, doanh nghiệp cần có mục tiêu rõ ràng và truyền đạt cho nhân sự thấy tầm quan trọng của những yếu tố này. Từ đó, họ sẽ hiểu được vai trò của mô hình sản xuất tinh gọn trong việc giúp tổ chức hoàn thành kế hoạch và chủ động thực hiện.</p>
             </section>
             <br>
             <section id="section6-2">
-                <h1>Kiên định với mô hình Lean</h1>
+                <h3>Kiên định với mô hình Lean</h3>
                 <p>Các nhà lãnh đạo cấp cao của doanh nghiệp cần thể hiện rõ sự kiên định với mô hình sản xuất tinh gọn qua một số hành vi như truyền đạt tầm nhìn rõ ràng về việc ứng dụng Lean, thường xuyên đến xưởng sản xuất, tự tìm hiểu nguyên nhân gây vấn đề trước khi khiển trách cấp dưới v.vv..</p>
                 <img
                     src="https://www.testcenter.vn/blog/wp-content/uploads/2024/01/lean-la-gi-testcenter-6.jpg"
@@ -247,12 +246,12 @@
             </section>
             <br>
             <section id="section6-3">
-                <h1>Vạch ra chuỗi giá trị từ đầu đến cuối</h1>
+                <h3>Vạch ra chuỗi giá trị từ đầu đến cuối</h3>
                 <p>Với việc vạch ra chuỗi giá trị từ đầu đến cuối (nhập nguyên vật liệu thô → giao thành phẩm), nếu được sử dụng đúng cách, phương pháp này sẽ hướng doanh nghiệp tới một lộ trình cải tiến rõ ràng và đơn giản hơn, giúp hạn chế tối đa tình trạng bị xao nhãng hay “lạc đường” trong quy trình sản xuất.</p>
             </section>
             <br>
             <section id="section6-4">
-                <h1>Đặt tiêu chuẩn rõ ràng ngay từ đầu</h1>
+                <h3>Đặt tiêu chuẩn rõ ràng ngay từ đầu</h3>
                 <p>Tiêu chuẩn hóa môi trường làm việc cũng như bản thân công việc được xem như nền tảng cốt lõi của mô hình Lean. Theo đó, nhà quản trị có thể lựa chọn quy tắc 5S làm điểm khởi đầu cho phương pháp này. Việc đặt ra những tiêu chuẩn rõ ràng ngay từ lúc này sẽ góp phần ổn định quy trình sản xuất và mang lại chất lượng sản phẩm/dịch vụ nhất quán hơn, từ đó cung cấp cơ sở để thực hiện nhiều cải tiến khác.</p>
                 <img
                     src="https://www.testcenter.vn/blog/wp-content/uploads/2024/01/lean-la-gi-testcenter-7.jpg"
@@ -261,18 +260,18 @@
             </section>
             <br>
             <section id="section6-5">
-                <h1>Tập trung vào nhóm lãnh đạo tuyến đầu</h1>
+                <h3>Tập trung vào nhóm lãnh đạo tuyến đầu</h3>
                 <p><a href="#" class="high-light">Lãnh đạo</a> tuyến đầu là những người có ảnh hưởng lớn nhất về khía cạnh văn hóa trong các mô hình cải tiến như Lean. Không chỉ giữ vai trò giám sát, quản lý, dẫn đầu nhóm v.vv.., họ còn nhận được sự tin tưởng, tín nhiệm và tiếp nhận báo cáo công việc hằng ngày trực tiếp từ nhân viên.</p>
                 <p>Chính vì vậy, nhóm đối tượng này cần được cung cấp những công cụ quản lý, đào tạo kỹ năng lãnh đạo và kiến thức về cải tiến để giúp họ có thể tạo ra nhiều “lực đẩy cải tiến” hơn cho nội bộ doanh nghiệp.</p>
             </section>
             <br>
             <section id="section6-6">
-                <h1>Phân bổ hợp lý các nguồn lực</h1>
+                <h3>Phân bổ hợp lý các nguồn lực</h3>
                 <p>Một trong những lý do phổ biến khiến các doanh nghiệp ứng dụng không thành công mô hình sản xuất tinh gọn đến từ việc thiếu thốn nguồn lực. Do đó, mặc dù nhân sự tại mọi phòng ban của tổ chức đã phải đảm nhận hàng loạt nhiệm vụ riêng nhưng khi quyết định dùng Lean, nhà quản trị vẫn cần đảm bảo đầy đủ yếu tố này.</p>
                 <p>Một số cách thức phân bổ phổ biến thường được nhiều công ty áp dụng có thể kể đến như thuê ngoài đội ngũ chuyên gia, tư vấn, huấn luyện về Lean hay sử dụng công cụ phần mềm giúp tiết kiệm tối đa thời gian, công sức và chi phí.</p>
             </section>
             <section id="section6-7">
-                <h1>Sát sao ngay từ quy trình tuyển dụng</h1>
+                <h3>Sát sao ngay từ quy trình tuyển dụng</h3>
                 <p>Bên cạnh những phương pháp kể trên, sát sao ngay từ quy trình tuyển dụng cũng chính là một cách hiệu quả để triển khai thành công mô hình sản xuất tinh gọn mà doanh nghiệp có thể tham khảo.</p>
                 <p>Theo nghiên cứu của Hiệp hội Quản lý Nguồn nhân lực, chi phí trung bình để thay thế nhân viên cũ khi họ rời đi mà mỗi tổ chức phải bỏ ra tương đương từ 06 đến 09 tháng lương trả cho nhân viên thông thường. Như vậy, nếu tiến hành kiểm soát chặt chẽ ngay từ bước tuyển dụng ban đầu, nhà quản trị sẽ hạn chế được tối đa <a href="" class="high-light">tỷ lệ nghỉ việc</a> của nhân sự sau này, góp phần tối ưu chi phí cho doanh nghiệp.</p>
                 <img
@@ -284,7 +283,7 @@
             </section>
             <br>
             <section id="section7">
-                <h1>Tổng kết</h1>
+                <h2>Tổng kết</h2>
                 <p>Như vậy, bài viết do Testcenter.vn mang tới ngày hôm nay đã giúp bạn trả lời câu hỏi<b>“Lean là gì?”</b> cùng những lợi ích mà mô hình này mang lại cho doanh nghiệp. Nhìn chung, việc ứng dụng hiệu quả Lean trong thực thế được đánh giá ở mức tương đối khó khăn.</p>
                 <p>Chính bởi vậy, nhà quản trị cần phải đưa ra những tiêu chí rõ ràng và hành động nhất quán với sự đoàn kết từ toàn thể nhân viên để giúp Lean phát huy hiệu quả một cách tối đa nhất!</p>
                 <p><b>TestCenter.vn – Nền tảng đánh giá năng lực nhân sự cung cấp giải pháp test online dành cho doanh nghiệp Việt Nam. TestCenter.vn với ngân hàng 300+ đề thi tuyển dụng nhân sự mẫu hỗ trợ quy trình đánh giá năng lực nhân sự. Tự hào đồng hành cùng +500 khách hàng doanh nghiệp hàng đầu như Honda, Sailun, Petrolimex, Ngân hàng TMCP Hàng Hải Việt Nam (MSB),…</b></p>
@@ -299,12 +298,12 @@
                 </button>
             </div>
             <div class="button-inform">
-                <a type="button" class="btn btn-primary"><i class="fa-brands fa-facebook-f"></i></a>
-                <a type="button" class="btn btn-info"><i class="fa-brands fa-twitter"></i></a>
-                <a type="button" class="btn btn-success"><i class="fa-brands fa-pinterest-p"></i></a>
-                <a type="button" class="btn btn-danger"><i class="fa-brands fa-whatsapp"></i></a>
-                <a type="button" class="btn btn-warning"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a type="button" class="btn btn-dark"><i class="fa-brands fa-tumblr"></i></a>
+                <span type="button" class="facebook"><i class="fa-brands fa-facebook-f"></i></span>
+                <span type="button" class="twitter"><i class="fa-brands fa-twitter"></i></span>
+                <span type="button" class="pinterest"><i class="fa-brands fa-pinterest-p"></i></span>
+                <span type="button" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></span>
+                <span type="button" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></span>
+                <span type="button" class="tumblr"><i class="fa-brands fa-tumblr"></i></span>
             </div>
             <div class="next-new d-flex justify-content-between gap-6 ">
                 <div class="left-new w-40 text-start">
@@ -318,11 +317,11 @@
             </div>
             <br>
             <br>
-            <div class="button-inform">
-                <button type=button class=" btn btn-primary">Bài viết mới nhất</button>
-                <button type=button class=" btn btn-outline-white">Xem thêm</button>
+            <div class="title-titles">
+                <div class="title-titles">
+                    <h2 class="title-textTitle"><span>Bài viết liên quan</span><span class="title-more">Xem thêm</span></h2>
+                </div>
             </div>
-            <hr class="line">
             <div class="card-main-footer">
                 <div class="card-body-footer" id="articleContainer">
                 </div>
@@ -335,58 +334,80 @@
                 // Sample data: you can replace this with your dynamic data
                 const articles = [
                     {
+                        link:"Tin tức",
+                        url:"{{route('news')}}",
                         summary: "Equity Theory là gì? Cách quản trị doanh nghiệp hiệu quả với học thuyết cân bằng",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2024/02/equity-theory-la-gi-testcenter-1-218x150.jpg"
                     },
                     {
+                        link:"Tài liệu",
+                        url:"{{route('news')}}",
                         summary: "Lean là gì? Phương pháp ứng dụng mô hình Lean để tối ưu chi phí cho doanh nghiệp",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2024/01/lean-la-gi-testcenter-218x150.jpg"
                     },
                     {
+                        link:"Tin tức",
+                        url:"{{route('news')}}",
                         summary: "Dấu hiệu nhận biết ứng viên không trung thực nhà quản trị cần biết",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2024/03/dau-hieu-nhan-biet-ung-vien-khong-trung-thuc-testcenter-218x150.jpg"
                     },
                     {
+                        link:"Tài liệu",
+                        url:"{{route('news')}}",
                         summary: "Tuyển Mass là gì? Nguyên tắc vàng để tuyển Mass hiệu quả",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2024/03/tuyen-mass-la-gi-testcenter-218x150.jpg"
                     },
                     {
+                        link:"Tài liệu",
+                        url:"{{route('news')}}",
                         summary: "Bonding là gì? Mở “khóa” các hoạt động gắn kết tình đồng đội",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2024/02/bonding-la-gi-testcenter-1-218x150.jpg"
                     },
                     {
+                        link:"Tài liệu",
+                        url:"{{route('news')}}",
                         summary: "Revenue Stream là gì? Phương pháp tăng trưởng dòng doanh",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2024/02/revenue-stream-la-gi-testcenter-218x150.jpg"
                     },
                     {
+                        link:"Tài liệu",
+                        url:"{{route('news')}}",
                         summary: "Pricing strategy là gì? Có bao nhiêu chiến lược giá?",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2024/02/chienluocgialagi-testcenter-218x150.jpg"
                     },
                     {
+                        link:"Tài liệu",
+                        url:"{{route('news')}}",
                         summary: "06 cách giải quyết mâu thuẫn trong nội bộ doanh nghiệp dành cho nhà quản lý",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2024/02/cachgiaiquyetmauthuan-testcenter-218x150.jpg"
                     },
                     {
+                        link:"Tài liệu",
+                        url:"{{route('news')}}",
                         summary: "Flowchart là gì? Cách ứng dụng Flowchart vào quy trình tuyển dụng hiệu quả",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2023/12/flowchart-la-gi-testcenter-218x150.jpg"
                     },
                     {
+                        link:"Tài liệu",
+                        url:"{{route('news')}}",
                         summary: "Quan tâm là gì? 10 cách quan tâm nhân viên mới nhất",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2023/12/quan-tam-la-gi-testcenter-218x150.jpg"
                     },
                     {
+                        link:"Tài liệu",
+                        url:"{{route('news')}}",
                         summary: "Phẩm chất là gì? 8 phẩm chất cần có của nhân viên khi đánh giá",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2023/12/pham-chat-la-gi-testcenter-218x150.jpg"
                     },
                     {
+                        link:"Tài liệu",
+                        url:"{{route('news')}}",
                         summary: "Ma trận 9 Box Grid – Đánh giá và phát triển nhân viên hiệu quả",
                         image_url: "https://www.testcenter.vn/blog/wp-content/uploads/2023/11/ma-tran-9-box-grid-testcenter-218x150.jpg"
                     }
                 ];
-
                 const articlesPerPage = 3;
                 let currentPage = 1;
-
                 function displayArticles(page) {
                     const startIndex = (page - 1) * articlesPerPage;
                     const endIndex = page * articlesPerPage;
@@ -398,13 +419,17 @@
                     articlesToDisplay.forEach(article => {
                         articleContainer.innerHTML += `
                     <div class="card">
-                        <img href="#" src="${article.image_url}" alt="">
-                        <a href="#">${article.summary}</a>
+                        <div class="img-wrapper">
+                            <img href="#" src="${article.image_url}" alt="" class="img-fluid">
+                            <a href="${article.url}" type="button" class="link">${article.link}</a>
+                        </div>
+                        <div class="item-detail">
+                        <a href="${article.url}">${article.summary}</a>
+                        </div>
                     </div>
                 `;
                     });
                 }
-
                 function updateButtons() {
                     const prevBtn = document.getElementById('prevBtn');
                     const nextBtn = document.getElementById('nextBtn');
@@ -421,7 +446,6 @@
                         updateButtons();
                     }
                 });
-
                 document.getElementById('nextBtn').addEventListener('click', function () {
                     const totalPages = Math.ceil(articles.length / articlesPerPage);
                     if (currentPage < totalPages) {
@@ -430,7 +454,6 @@
                         updateButtons();
                     }
                 });
-
                 // Initial display
                 displayArticles(currentPage);
                 updateButtons();

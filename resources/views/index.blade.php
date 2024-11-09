@@ -138,72 +138,50 @@
                 <div class="group-features mt-4">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 container-content">
-                            <div class="box-container">
-                                @include('components.group_features',[
-                                    'title' => '1. Ngân hàng 300+ đề thi mẫu',
-                                    'description' => '300+ đề thi được xây dựng trên tiêu chuẩn quốc tế: quiz trắc nghiệm tính cách, trắc nghiệm disc, test trí thông minh IQ, EQ, đánh giá năng lực chuyên môn (PHP online test, test Marketing, Sales, Kế toán - Tài chính,…) phù hợp với nhiều mô hình doanh nghiệp khác nhau.',
-                                    'img' => asset('image/card/image7.png')
-                                ])
-                            </div>
+                                    @include('components.group_features',[
+                                        'title' => '1. Ngân hàng 300+ đề thi mẫu',
+                                        'description' => '300+ đề thi được xây dựng trên tiêu chuẩn quốc tế: quiz trắc nghiệm tính cách, trắc nghiệm disc, test trí thông minh IQ, EQ, đánh giá năng lực chuyên môn (PHP online test, test Marketing, Sales, Kế toán - Tài chính,…) phù hợp với nhiều mô hình doanh nghiệp khác nhau.',
+                                        'img' => asset('image/card/image7.png')
+                                    ])
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 container-content">
-                            <div class="box-container">
-                                <div class="d-flex flex-column align-items-center">
                                     @include('components.group_features',[
                                         'title' => '2. Tổ chức thi với quy mô hàng ngàn người',
                                         'description' => 'Thiết lập đợt thi chỉ trong 5 phút. Gửi đề thi đến hàng nghìn người cùng lúc bằng email hoặc mã QR. Hệ thống bảo mật tuyệt đối bằng mã truy cập giúp kỳ thi diễn ra bảo mật, công bằng, hạn chế tối đa gian lận.',
                                         'img' => asset('image/card/image8.png')
                                     ])
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 container-content">
-                            <div class="box-container">
-                                <div class="d-flex flex-column align-items-center">
                                     @include('components.group_features',[
                                         'title' => '3. Tạo bài test online nhanh chóng với các tùy chỉnh đa dạng',
                                         'description' => 'Dễ dàng tạo bài kiểm tra online không giới hạn số lượng với nhiều dạng câu hỏi khác nhau: trắc nghiệm, đúng/sai, tự luận, matching, điền vào chỗ trống, câu hỏi nhóm…. đáp ứng hầu hết nhu cầu của các vị trí trong mọi ngành nghề, lĩnh vực.',
                                         'img' => asset('image/card/image9.png')
                                     ])
-                                </div>
-                            </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 container-content">
-                            <div class="box-container">
-                                <div class="d-flex flex-column align-items-center">
                                     @include('components.group_features',[
                                         'title' => '4. Tự động tổng hợp kết quả, chính xác và nhanh chóng',
                                         'description' => 'Hệ thống tự động chấm điểm hỗ trợ tối đa việc lọc kết quả của từng thí sinh. Tổng hợp kết quả nhanh chóng, giúp tiết kiệm thời gian, giảm thiểu công sức và hạn chế tối đa sai sót.',
                                         'img' => asset('image/card/image10.png')
                                     ])
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 container-content">
-                            <div class="box-container">
-                                <div class="d-flex flex-column align-items-center">
                                     @include('components.group_features',[
                                         'title' => '5. Báo cáo trực quan',
                                         'description' => 'Thống kê kết quả trực quan, toàn diện và cập nhật real-time dưới dạng biểu đồ kết hợp số liệu chi tiết. Giúp đánh giá năng lực chính xác dựa trên các con số cụ thể, rõ ràng.',
                                         'img' => asset('image/card/image11.png')
                                     ])
-                                </div>
-                            </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 container-content">
-                            <div class="box-container">
-                                <div class="d-flex flex-column align-items-center">
                                     @include('components.group_features',[
                                         'title' => '6. Phân quyền, cộng tác dễ dàng',
                                         'description' => 'Hệ thống phân quyền tài khoản quản lý nhằm tối đa hiệu quả làm việc nhóm và bảo mật đề thi.',
                                         'img' => asset('image/card/image12.png')
                                     ])
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -375,7 +353,6 @@
                     <div class="owl-carousel owl-theme owl-loaded owl-carousel-latest-news hidden-md">
                         <div class="owl-stage-outer">
                             <div class="owl-stage">
-
                                 @include('components.owl_items',[
                                     'link' => route('blog_true'),
                                     'img' => asset('image/resources/paying-1438142_1920.jpeg'),
@@ -385,7 +362,6 @@
                                     'description' => 'Chia sẻ phần mềm tạo bài test nhân viên QC chuyên nghiệp nhất',
                                     'linkButton' => route('blog')
                                 ])
-
                                 @include('components.owl_items',[
                                         'link' => route('blog_true'),
                                         'img' => asset('image/card/iq-va-eq-cai-nao-quan-trong-hon-testcenter.jpg'),
@@ -400,8 +376,6 @@
                                         viên. Nếu bạn cũng đang tìm hiểu vấn đề IQ và [&hellip;]',
                                         'linkButton' => route('blog')
                                     ])
-
-
                                 @include('components.owl_items',[
                                         'link' => route('blog_true'),
                                         'img' => asset('image/resources/batchsale-3701777_1920.jpeg'),

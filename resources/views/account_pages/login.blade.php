@@ -22,7 +22,7 @@
     </script>
 @endsection
 @section('form')
-    <div class="card-body">
+    <div class="card-body p-0">
         <div class="email form-group custom-input text-left">
         <span class="form-icon">
                      <i class="bi bi-envelope"></i>

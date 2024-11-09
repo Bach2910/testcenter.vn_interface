@@ -12,120 +12,142 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-<div class="header-mobi">
-    <div class="mobi-telephone">
-        <div class="telephone-hidden">
-            <div class="hamburger" onclick="openOverlay()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <!-- Nội dung của overlay -->
-            <div class="overlay" id="overlay">
-                <div class="header-overlay">
-                    <div class="link-inform">
-                        <a  type="button"><i class="fa-brands fa-facebook"></i></a>
-                        <a  type="button"><i class="fa-solid fa-circle-info"></i></a>
-                        <a  type="button"><i class="fa-solid fa-envelope"></i></a>
-                    </div>
-                    <span class="close-btn" onclick="closeOverlay()"><i class="fa-solid fa-x"></i>
-                    </span>
+<div class="td-header">
+    <div class="header-mobi d-block d-md-none">
+        <div class="mobi-telephone">
+            <div class="telephone-hidden">
+                <div class="hamburger" onclick="openOverlay();zoomIn()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-                <form class="menu-form">
-                    <a class="nav-link" href="{{route('index')}}">Trang chủ</a>
-                    <a class="nav-link" href="{{route('peoples')}}">Nhân sự</a>
-                    <a class="nav-link" href="{{route('exam')}}">Mẫu đề thi online</a>
-                    <a class="nav-link" href="{{route('document')}}">Tài liệu</a>
-                    <a class="nav-link" href="{{route('news')}}">Tin tức</a>
-                </form>
-            </div>
-        </div>
-        <div class="logo-header-hidden">
-            <img class="td-retina-data td-retina-version"
-                 data-retina="https://www.testcenter.vn/blog/wp-content/uploads/2020/11/logo-header-3-1.png"
-                 src="https://www.testcenter.vn/blog/wp-content/uploads/2020/11/logo-header-3-1.png"
-                 alt="logo testcenter" width="auto" height="54">
-        </div>
-        <div class="search-hidden">
-            <div class="search-button" onclick="openOverlaySearch()"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <!-- Overlay content -->
-            <div class="overlay-search" id="overlaySearch">
-                <form class="tdc-title">
-                    <span>TÌM KIẾM</span><br>
-                    <input class="input-search" type="text">
-                </form>
-                <span class="search-close-btn" onclick="closeOverlaySearch()"><i class="fa-solid fa-x"></i></span>
-            </div>
-        </div>
-    </div>
-</div>
-<nav class="container navbar navbar-expand-lg navbar-resources td-pb-row">
-    <div class=" collapse navbar-collapse main" id="navbarSupportedContent">
-        <div class="form-logo">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item me-3">
-                    <a class="navbar-brand container" aria-current="page" href="{{route('blog')}}">
-                        <img class="logo-img"
-                             src="{{asset('image/resources/logo-e1617684193993.png')}}"
-                             alt="Trang chủ" style="height:34px;width:120px">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="form-menu">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item me-3">
-                    <a class="nav-link" href="{{route('index')}}"><span class="highlight">Trang chủ</span></a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link" href="{{route('peoples')}}">Nhân sự</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link" href="{{route('exam')}}">Mẫu đề Test Online</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('document')}}">Tài liệu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('news')}}">Tin tức</a>
-                </li>
-                <li>
-                    <form class="search-container">
-                    <span class="search-icon" onclick="toggleSearch()"><i
-                            class="fa-solid fa-magnifying-glass"></i></span>
-                        <div class="search-box" id="searchBox">
-                            <input type="text" class="search-input" id="searchInput" placeholder="Tìm kiếm">
-                            <button class="search-button" id="searchButton" onclick="performSearch()">Tìm Kiếm</button>
+                <div class="overlay" id="overlay">
+                    <div class="header-overlay">
+                        <div class="link-inform">
+                            <a type="button"><i class="fa-brands fa-facebook"></i></a>
+                            <a type="button"><i class="fa-solid fa-circle-info"></i></a>
+                            <a type="button"><i class="fa-solid fa-envelope"></i></a>
                         </div>
+                        <span class="close-btn" onclick="closeOverlay();zoomOut()"><i class="fa-solid fa-x"></i>
+                    </span>
+                    </div>
+                    <form class="menu-form">
+                        <a class="nav-link" href="{{route('index')}}">Trang chủ</a>
+                        <a class="nav-link" href="{{route('peoples')}}">Nhân sự</a>
+                        <a class="nav-link" href="{{route('exam')}}">Mẫu đề thi online</a>
+                        <a class="nav-link" href="{{route('document')}}">Tài liệu</a>
+                        <a class="nav-link" href="{{route('news')}}">Tin tức</a>
                     </form>
-                </li>
-            </ul>
+                </div>
+            </div>
+            <div class="logo-header-hidden">
+                <img class="td-retina-data td-retina-version"
+                     data-retina="https://www.testcenter.vn/blog/wp-content/uploads/2020/11/logo-header-3-1.png"
+                     src="https://www.testcenter.vn/blog/wp-content/uploads/2020/11/logo-header-3-1.png"
+                     alt="logo testcenter" width="auto" height="54">
+            </div>
+            <div class="search-hidden">
+                <div class="search-button" onclick="openOverlaySearch();zoomIn()"><i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <!-- Overlay content -->
+                <div class="overlay-search" id="overlaySearch">
+                    <form class="tdc-title">
+                        <span>TÌM KIẾM</span><br>
+                        <input class="input-search" type="text">
+                    </form>
+                    <span class="search-close-btn" onclick="closeOverlaySearch();zoomOut()"><i class="fa-solid fa-x"></i></span>
+                </div>
+            </div>
         </div>
-        <script>
-            function toggleSearch() {
-                const searchBox = document.getElementById('searchBox');
-                const isHidden = searchBox.style.display === 'none' || searchBox.style.display === '';
-
-                if (isHidden) {
-                    searchBox.style.display = 'block';
-                    setTimeout(() => {
-                        searchBox.classList.add('show');
-                    });
-                } else {
-                    searchBox.classList.remove('show');
-                    setTimeout(() => {
-                        searchBox.style.display = 'none';
-                    });
-                }
-            }
-
-            function performSearch() {
-                const query = document.getElementById('searchInput').value;
-                alert('Searching for: ' + query);
-            }
-        </script>
     </div>
-</nav>
+    <nav class="container navbar navbar-expand-lg navbar-expand-md navbar-resources td-pb-row d-sm-block">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="height:80px">
+            <div class="form-logo">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item me-3">
+                        <a class="navbar-brand container" aria-current="page" href="{{route('blog')}}">
+                            <img class="logo-img"
+                                 src="{{asset('image/resources/logo-e1617684193993.png')}}"
+                                 alt="Trang chủ" style="height:34px;width:120px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-menu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="{{route('index')}}"><span class="highlight">Trang chủ</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('peoples')}}">Nhân sự</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('exam')}}">Mẫu đề Test Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('document')}}">Tài liệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('news')}}">Tin tức</a>
+                    </li>
+                    <li>
+                        <form class="search-container" onsubmit="return performSearch(event)">
+                            <span class="search-icon" onclick="toggleSearch()"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <div class="search-box" id="searchBox">
+                                <input type="text" class="search-input" id="searchInput" placeholder="Tìm kiếm">
+                                <button type="submit" class="search-button" id="searchButton">Tìm Kiếm</button>
+                            </div>
+                        </form>
+                        <script>
+                            function performSearch(event) {
+                                // Ngăn form submit mặc định
+                                event.preventDefault();
+
+                                // Lấy giá trị từ ô tìm kiếm
+                                const query = document.getElementById("searchInput").value;
+
+                                // Kiểm tra nếu có giá trị tìm kiếm
+                                if (query) {
+                                    // Chuyển hướng đến trang tìm kiếm với query trong URL
+                                    window.location.href = `/search?keyword=${encodeURIComponent(query)}`;
+                                }
+                            }
+                        </script>
+
+                    </li>
+                </ul>
+            </div>
+            <script>
+                function toggleSearch() {
+                    const searchBox = document.getElementById('searchBox');
+                    const isHidden = searchBox.style.display === 'none' || searchBox.style.display === '';
+
+                    if (isHidden) {
+                        searchBox.style.display = 'block';
+                        setTimeout(() => {
+                            searchBox.classList.add('show');
+                        });
+                    } else {
+                        searchBox.classList.remove('show');
+                        setTimeout(() => {
+                            searchBox.style.display = 'none';
+                        });
+                    }
+                }
+
+                function performSearch() {
+                    const query = document.getElementById('searchInput').value;
+                    alert('Searching for: ' + query);
+                }
+                function zoomIn() {
+                    document.body.classList.add("zoomed");
+                }
+                function zoomOut() {
+                    document.body.classList.remove("zoomed");
+                }
+            </script>
+        </div>
+    </nav>
+</div>
 <script>
-    // Mở overlay và ngăn cuộn trang
     function openOverlay() {
         document.querySelector('.overlay').style.display = 'block';
         document.body.classList.add('no-scroll');
@@ -149,8 +171,8 @@
     }
 
 </script>
-<div class="resources-main tdc-row td-pb-row ">
-        @yield('main')
+<div class="resources-main tdc-row td-pb-row container">
+    @yield('main')
 </div>
 <div class="footer-resources container ">
     <div class="logo">

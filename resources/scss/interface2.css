@@ -40,6 +40,12 @@
   position: absolute;
   right: 125px;
 }
+.product-section .product-section-intro-mobi {
+  display: none;
+}
+.product-section .product-section-intro-mobi .product-section-intro-left .highlight {
+  color: #2C4A9F !important;
+}
 
 .product-container-fluid {
   padding-left: 24px;
@@ -69,6 +75,30 @@
   color: #57d7ff !important;
 }
 
+@media only screen and (max-width: 992px) {
+  .product-section-intro-right {
+    right: 50px !important;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .pc-hidden {
+    display: block !important;
+  }
+  .body-container-product {
+    background-image: none !important;
+  }
+  .product-section .product-section-intro-pc {
+    display: none;
+  }
+  .product-section .product-section-intro-mobi {
+    display: block !important;
+  }
+  .product-section .product-section-intro-mobi .product-section-intro-left h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
 .body-container-product {
   background-image: url("/image/card/group_8707.png");
   background-size: auto;
@@ -109,21 +139,12 @@
   background-color: #ffffff !important;
 }
 
-.box-container {
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.04);
-  padding: 24px;
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
-  background-color: #ffffff !important;
-}
-
 .features {
   background-color: rgba(237, 248, 255, 0.3607843137);
 }
 
 .features-box {
-  background-color: #ffffff !important;
+  background-color: #ffffff;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -250,9 +271,13 @@
   font-weight: 400;
 }
 
+.owl-item .card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.02) !important;
+  padding: 2px !important;
+}
 .owl-item .card-item {
   box-shadow: none;
-  padding: 0px;
+  padding: 0;
   border-color: #EEEEEE;
   font-weight: 400;
 }
@@ -312,6 +337,15 @@ section {
 
 .custom-indent {
   padding-left: 20px; /* Adjust the value as needed */
+}
+
+.card-title a {
+  color: black;
+  text-decoration: none;
+}
+.card-title a:hover, .card-title a:focus {
+  text-decoration: none;
+  color: black;
 }
 
 .table-content a {

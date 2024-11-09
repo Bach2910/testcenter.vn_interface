@@ -1,9 +1,11 @@
 <div class="hidden-div">
     <div class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative h-100">
         <div class="img-wrapper">
-            <img
-                src="{{$img}}"
-                alt="Micromanagement image">
+            <a href="{{route('blog_equity')}}">
+                <img
+                    src="{{$img}}"
+                    alt="Micromanagement image" class="animation">
+            </a>
         </div>
         <div class="item-small-detail">
             <div class="title-small">

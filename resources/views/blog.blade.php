@@ -19,7 +19,7 @@
                 @include('components.carousel-item',[
                     'img' => asset('image/resources/dau-hieu-nhan-biet-ung-vien-khong-trung-thuc-testcenter.jpg'),
                     'link' => route('news'),
-                    'title' => 'tin tức',
+                    'title' => 'Tin tức',
                     'link_title' => route('blog_true'),
                     'description' => 'Dấu hiệu nhận biết ứng viên không trung thực nhà quản trị
                             cần biết'
@@ -27,14 +27,14 @@
                 @include('components.carousel-item',[
                     'img' => asset('image/resources/tuyen-mass-la-gi-testcenter.jpg'),
                     'link' => route('news'),
-                    'title' => 'tin tức',
+                    'title' => 'Tin tức',
                     'link_title' => route('blog_true'),
                     'description' => 'tuyển mass là gì'
                 ])
                 @include('components.carousel-item',[
                     'img' => asset('image/resources/equity-theory-la-gi-testcenter-1.jpg'),
                     'link' => route('news'),
-                    'title' => 'tin tức',
+                    'title' => 'Tin tức',
                     'link_title' => route('blog_true'),
                     'description' => 'Lean là gì? Phương pháp ứng dụng mô hình Lean để tối ưu chi phí cho doanh nghiệp'
                 ])
@@ -225,7 +225,6 @@
                             'button' => 'Tin tức',
                             'description' => 'Bỏ túi những dấu hiệu nhận biết ứng viên không trung thực khi phỏng vấn sẽ giúp quá trình tìm kiếm và lựa chọn nhân tài của các nhà tuyển dụng trở nên thuận...'
                     ])
-
                     @include('components.hidden_div_exam',[
                            'img'=> asset('image/resources/324x235/iq-va-eq-cai-nao-quan-trong-hon-testcenter-324x235.jpg'),
                            'title' =>  'IQ và EQ: Cái nào quan trọng hơn?',
@@ -415,7 +414,7 @@
         });
     </script>
     <div class="picture2 container mt-5 mb-5 td-pb-row">
-        <img src="{{asset('image/resources/Thumbnail-Testcenter-30.6-01-1.png')}}" alt="">
+        <img src="{{asset('image/resources/Thumbnail-Testcenter-30.6-01-1.png')}}" alt=""class="img-fluid">
     </div>
     <div class="news container td-pb-row">
         <div class="title-titles">

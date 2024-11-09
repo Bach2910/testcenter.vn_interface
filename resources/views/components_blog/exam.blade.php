@@ -22,7 +22,7 @@
                             <div class="td_module_11 mt-5 td_module_wrap td-animation-stack">
                                 <div class="td-module-thumb mb-2">
                                     <a href="{{ $exam['url'] }}" rel="bookmark" class="td-image-wrap" title="{{ $exam['title'] }}">
-                                        <img class="entry-thumb" src="{{ $exam['image_url'] }}" alt="{{ $exam['title'] }}" width="324" height="235" />
+                                        <img class="entry-thumb animation" src="{{ $exam['image_url'] }}" alt="{{ $exam['title'] }}" width="324" height="235" />
                                     </a>
                                 </div>
                                 <div class="item-details">
@@ -43,7 +43,7 @@
                         @endforeach
                     </div>
                     <div class="pagination-wrapper">
-                        {{$exams->links('pagination::bootstrap-5') }}
+                        {{$exams->links('pagination::bootstrap-4') }}
                     </div>
                 </div>
             </div>
