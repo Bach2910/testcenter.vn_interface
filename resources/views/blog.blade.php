@@ -1,6 +1,6 @@
 @extends('layout.resources')
 @section('main')
-    <div class="container">
+    <div class="tdc-row td-pb-span2">
         <div id="exampleCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner slide">
                 <div class="carousel-item h-100 active">
@@ -54,33 +54,35 @@
             </div>
         </div>
     </div>
-    <div class="card-main container td-pb-row">
-        @include('components.blog_item', [
-            'img' => asset('image/resources/nang-luc-nghe-nghiep-324x160.jpeg'),
-            'name' => 'Tài liệu',
-            'title' => 'Bài test DISC – Công cụ “sắc bén” của nhà tuyển dụng',
-            'desc' => 'Bài test DISC và các bài test online khác đang trở thành một trong những công cụ giúp đánh giá ứng viên hiệu quả....'
-        ])
-        @include('components.blog_item', [
-                'img' => asset('image/resources/cats1-1-1-324x160.jpg'),
+    <div class="tdc-row td-pb-row mt-5">
+        <div class="tdc-news-row ">
+            @include('components.blog_item', [
+                'img' => asset('image/resources/nang-luc-nghe-nghiep-324x160.jpeg'),
                 'name' => 'Tài liệu',
-               'title' => 'Sơ đồ tổ chức doanh nghiệp là gì? – Cách tạo sơ đồ tổ chức nhanh chóng',
-               'desc' => 'Testcenter - Đối với bất kỳ công ty hay doanh nghiệp, cơ cấu tổ chức doanh nghiệp đóng vai trò rất quan trọng. Nó...'
-           ])
-        @include('components.blog_item',[
-                'img' => asset('image/resources/bo-tri-nhan-su-324x160.jpg'),
-                'name' => 'Tài liệu',
-                'title' =>'Bỏ túi “bí kíp” bố trí nhân sự hiệu quả dành...',
-                'desc' =>'Testcenter - Đối với doanh nghiệp, tuyển dụng được nhân sự giỏi và tài năng đã là một việc khó nhưng để bố trí...',
+                'title' => 'Bài test DISC – Công cụ “sắc bén” của nhà tuyển dụng',
+                'desc' => 'Bài test DISC và các bài test online khác đang trở thành một trong những công cụ giúp đánh giá ứng viên hiệu quả....'
             ])
+            @include('components.blog_item', [
+                    'img' => asset('image/resources/cats1-1-1-324x160.jpg'),
+                    'name' => 'Tài liệu',
+                   'title' => 'Sơ đồ tổ chức doanh nghiệp là gì? – Cách tạo sơ đồ tổ chức nhanh chóng',
+                   'desc' => 'Testcenter - Đối với bất kỳ công ty hay doanh nghiệp, cơ cấu tổ chức doanh nghiệp đóng vai trò rất quan trọng. Nó...'
+               ])
+            @include('components.blog_item',[
+                    'img' => asset('image/resources/bo-tri-nhan-su-324x160.jpg'),
+                    'name' => 'Tài liệu',
+                    'title' =>'Bỏ túi “bí kíp” bố trí nhân sự hiệu quả dành...',
+                    'desc' =>'Testcenter - Đối với doanh nghiệp, tuyển dụng được nhân sự giỏi và tài năng đã là một việc khó nhưng để bố trí...',
+                ])
+        </div>
     </div>
-    <div class="picture1 container pt-5 pb-5 td-pb-row">
+    <div class="picture1 pt-5 pb-5 td-pb-row tdc-row td-pb-span3">
         <img src="{{asset('image/resources/panter.png')}}" alt="">
     </div>
-    <div class="blog-container container td-pb-row">
+    <div class="blog-container tdc-row td-pb-row">
         <div class=" mt-5 news">
             <div class="tdc-row">
-                <div class="td-left-blog">
+                <div class="td-left-blog td-pb-span8">
                     <div class="title-titles">
                         <h2 class="title-textTitle"><span>Bài viết mới nhất</span></h2>
                     </div>
@@ -110,8 +112,7 @@
                         'description' => 'Hiểu rõ Micromanagement là gì sẽ giúp nhà quản lý biết cách áp dụng phương pháp này đúng thời điểm, tránh gây nên tác động xấu tới doanh nghiệp của mình. Vậy, thực hư...'
                     ])
                 </div>
-                <div class="td-right-blog">
-                    <div class="dsa">
+                <div class="td-right-blog td-pb-span4">
                         <div class="card-image">
                             <a href="https://example.com">
                                 <img src="{{asset('image/resources/panter2.png')}}"
@@ -202,12 +203,11 @@
                             <a type="button" id="viewMoreBtnNews">Xem thêm</a>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
         <div class=" mt-5 news">
             <div class="tdc-row">
-                <div class="td-left-blog card-list-exam">
+                <div class="td-left-blog card-list-exam td-pb-span8">
                     <div class="title-titles">
                         <div class="title-titles">
                             <h2 class="title-textTitle"><span>Mẫu đề</span></h2>
@@ -253,7 +253,7 @@
                         <a type="button" id="viewMoreBtnExam">Xem thêm</a>
                     </div>
                 </div>
-                <div class="td-right-blog">
+                <div class="td-right-blog td-pb-span4">
                     <div class="news-content card-list">
                         <div class="title-titles">
                             <div class="title-titles">
@@ -413,39 +413,41 @@
             });
         });
     </script>
-    <div class="picture2 container mt-5 mb-5 td-pb-row">
-        <img src="{{asset('image/resources/Thumbnail-Testcenter-30.6-01-1.png')}}" alt=""class="img-fluid">
+    <div class="picture2 mt-5 mb-5 td-pb-row tdc-row">
+        <img src="{{asset('image/resources/Thumbnail-Testcenter-30.6-01-1.png')}}" alt="" class="img-fluid">
     </div>
-    <div class="news container td-pb-row">
+    <div class="news td-pb-row tdc-row">
         <div class="title-titles">
-            <div class="title-titles">
-                <h2 class="title-textTitle"><span>Bài viết mới nhất</span></h2>
+            <div class="td-pb-span12">
+                <div class="title-titles ">
+                    <h2 class="title-textTitle "><span>Bài viết mới nhất</span></h2>
+                </div>
             </div>
         </div>
-        <div class="card-main">
+        <div class="tdc-news-row mb-0">
             @include('components.blog_item', [
             'img' => asset('image/resources/an-toan-thong-tin-696x464.png'),
             'name' => 'Tài liệu',
-            'title' => 'Bài test DISC – Công cụ “sắc bén” của nhà tuyển dụng',
-            'desc' => 'Bài test DISC và các bài test online khác đang trở thành một trong những công cụ giúp đánh giá ứng viên hiệu quả....'
+            'title' => 'KRI là gì và những ứng dụng của KRI trong quản trị doanh nghiệp',
+            'desc' => 'Chỉ số đo lường kết quả trọng yếu (KRI - Key Result Indicator) là một chỉ số quan trọng. Cùng tìm hiểu ngay KRI là gì nhé!'
         ])
             @include('components.blog_item', [
                 'img' => asset('image/resources/chien-luoc-nhan-su-696x464.jpg'),
                 'name' => 'Tài liệu',
-                'title' => '4 bước hoạch định chiến lược nhân sự hiệu quả cho mọi nhà quản lý',
-                'desc' => 'Chiến lược nhân sự trở thành ưu tiên hàng đầu của mọi doanh nghiệp. Đây là yếu tố quyết định nhiều đến sự thành...'
+                'title' => '“Bỏ túi” các tiêu chí đánh giá nhân viên kinh doanh hiệu quả nhất hiện nay ',
+                'desc' => 'Đánh giá nhân viên kinh doanh luôn rất được các doanh nghiệp chú trọng, bởi không chỉ đây là vị trí tạo ra doanh thu trực tiếp cho doanh nghiệp mà còn là vị trí rất khó xây dựng các tiêu chí đánh giá một cách hiệu quả. Hiểu được những khó khăn này, bài viết dưới đây, Testcenter sẽ chia sẻ với bạn những tiêu chí đánh giá nhân viên kinh doanh hiệu quả nhất hiện nay.'
             ])
             @include('components.blog_item', [
                 'img' => asset('image/resources/mau-danh-gia-thu-viec-1-696x464.jpeg'),
                 'name' => 'Tài liệu',
-                'title' => '3 mẫu đánh giá thử việc hiệu quả áp dụng cho doanh nghiệp',
-                'desc' => 'Mẫu đánh giá thử việc hay form đánh giá nhân viên thử việc là một trong những yếu tố quan trọng giúp các nhà...'
+                'title' => 'Năng lực làm việc là gì? Cách đánh giá năng lực làm việc của nhân viên',
+                'desc' => 'Bên cạnh một thái độ cầu tiến, một nhân cách tốt thì năng lực làm việc chính là thế mạnh cạnh tranh của từng nhân viên. Năng lực làm việc tốt sẽ là tiền đề giúp nhân viên có thể hoàn thành tốt các công việc được giao, đóng góp tích cực cho doanh nghiệp. Bài viết dưới đây chúng ta sẽ cùng nhau tìm hiểu kỹ hơn về năng lực làm việc là gì, cách đánh giá năng lực làm việc của nhân viên, các nền tảng đánh giá năng lực làm việc của nhân viên hiệu quả.      '
             ])
             @include('components.blog_item', [
-                'img' => asset('image/resources/thu-cam-on-nhan-vien-nghi-viec-696x435.jpg'),
+                'img' => asset('image/resources/de-test-tuyen-dung-696x464.png'),
                 'name' => 'Tài liệu',
-                'title' => 'NHÓM TÍNH CÁCH INFJ – NGƯỜI CHE CHỞ',
-                'desc' => 'Có rất ít người mang tính cách này, chỉ chiếm khoảng 1% dân số và họ mang trong mình khá nhiều đặc điểm bất...'
+                'title' => '3 mẫu bài test tuyển dụng được doanh nghiệp tin dùng nhất',
+                'desc' => 'Sử dụng mẫu bài test tuyển dụng đang trở nên phổ biến trong hầu hết doanh nghiệp, đặc biệt là trong tuyển dụng nhân...'
             ])
         </div>
     </div>

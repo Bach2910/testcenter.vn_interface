@@ -79,7 +79,10 @@ class InterFaceController extends \App\Http\Controllers\Controller
     {
         return view('footer_pages.policy_warning');
     }
-
+    public function examTest()
+    {
+        return view('footer_pages.exam_test');
+    }
     public function paginate($data, $viewName, $variableName = 'articles')
     {
         $paginate = collect($data);

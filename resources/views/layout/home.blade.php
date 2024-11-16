@@ -124,7 +124,7 @@
                             </a>
                         </p>
                         <p>
-                            <a target="_blank" href="" class="text-sm text-light link-item">
+                            <a target="_blank" href="{{route('examTest')}}" class="text-sm text-light link-item">
                                 Ngân hàng đề thi mẫu đa dạng
                             </a>
                         </p>

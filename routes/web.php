@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [InterFaceController::class, 'index'])->name('index');
-Route::get('/product', [InterFaceController::class, 'product'])->name('product');
+Route::get('/product', [InterFaceController::class,'product'])->name('product');
 Route::get('/dieu-khoan-su-dung/', [InterFaceController::class, 'termsUse'])->name('terms_use');
 Route::get('/chinh-sach-bao-mat/', [InterFaceController::class, 'privacyPolicy'])->name('privacy_policy');
 
@@ -22,6 +22,10 @@ Route::prefix('login')->group(function () {
 Route::prefix('forget-password')->group(function () {
     Route::get('/', [InterFaceController::class, 'forgetPassword'])->name('forget_password');
     Route::get('/vn', [InterFaceController::class, 'forgetPasswordVN'])->name('forget_password_vn');
+});
+
+Route::prefix('landing.testcenter.vn')->group(function () {
+   Route::get('/thu-vien-300-de-test-online-cho-nhan-su', [InterFaceController::class, 'examTest'])->name('examTest');
 });
 
 Route::prefix('blog')->group(function () {

@@ -6,10 +6,23 @@
             <a href="#" class="nav-link">Trang chủ</a>>
             <a>Tài liệu</a>
         </div>
-        <div class="button-selection">
-            <a class="mb-2 text-white btn btn-dark" style="font-size: 9px;width: 10%">Mới nhất</a>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <button class="dropdown-button">
+                    MỚI NHẤT
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#">Mới nhất</a>
+                    <a href="#">Tin tiêu biểu</a>
+                    <a href="#">Phổ biến nhất</a>
+                    <a href="#">Xem nhiều theo tuần</a>
+                    <a href="#">Bảng Điểm Đánh Giá</a>
+                    <a href="#">Ngẫu nhiên</a>
+                </div>
+            </div>
         </div>
-        <h1>Tài liệu</h1>
+        <h1 class="td-page-title">Tài liệu</h1>
         <div class="description">
             <p>Testcenter đưa đến nguồn tài nguyên dồi dào liên quan đến mô hình quản trị doanh nghiệp, công cụ tạo bài test online, tài liệu hướng dẫn và cách thức đưa các bài kiểm tra vào quy trình vận hành doanh nghiệp hiệu quả. </p>
         </div>

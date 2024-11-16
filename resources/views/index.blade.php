@@ -358,8 +358,8 @@
                                     'img' => asset('image/resources/paying-1438142_1920.jpeg'),
                                     'descriptionIMG' => 'Chia sẻ phần mềm tạo bài test nhân viên QC chuyên nghiệp nhất',
                                     'linkTitle' => route('blog_true'),
-                                    'title' => 'Bộ phận QC đóng vai trò khá quan trọng, giúp thúc đẩy sự phát triển của doanh nghiệp, thông qua việc đảm bảo về chất lượng sản phẩm. Vậy, nhân viên QC là gì? Đâu là phần mềm tạo bài test nhân viên QC hiệu quả? Mời bạn cùng Testcenter khám phá trong bài viết dưới đây nhé.',
-                                    'description' => 'Chia sẻ phần mềm tạo bài test nhân viên QC chuyên nghiệp nhất',
+                                    'title' => 'Chia sẻ phần mềm tạo bài test nhân viên QC chuyên nghiệp nhất',
+                                    'description' => 'Bộ phận QC nói chung và nhân viên QC đóng vai trò khá quan trọng, giúp thúc đẩy sự phát triển của doanh nghiệp, thông qua việc đảm bảo về chất lượng sản phẩm. Vậy, nhân viên QC là gì? Và đâu là phần mềm giúp thực hiện các bài test nhân viên QC hiệu quả. Mời bạn cùng Testcenter khám phá trong bài viết dưới đây nhé.',
                                     'linkButton' => route('blog')
                                 ])
                                 @include('components.owl_items',[
@@ -377,23 +377,23 @@
                                         'linkButton' => route('blog')
                                     ])
                                 @include('components.owl_items',[
-                                        'link' => route('blog_true'),
-                                        'img' => asset('image/resources/batchsale-3701777_1920.jpeg'),
-                                        'descriptionIMG' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thủ kho￼',
-                                        'linkTitle' => route('blog_true'),
-                                        'title' => 'Khi tuyển dụng, không ít doanh nghiệp yêu cầu nhân viên làm các bài test để đánh giá năng lực. Nhân viên thủ kho cũng không ngoại lệ, thông qua bài test nhân viên thủ kho nhà tuyển dụng có thể đánh giá mức độ phù hợp của nhân viên với vị trí đang tuyển. Ở bài viết này, Testcenter sẽ chia sẻ phần mềm thông minh tạo bài test nhân viên thủ kho cho nhà tuyển dụng.',
-                                        'description' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thủ kho￼',
-                                        'linkButton' => route('blog')
-                                    ])
-                                @include('components.owl_items',[
                                          'link' => route('blog_true'),
                                          'img' => asset('image/resources/batchbusinesswoman-571153_1920.jpeg'),
                                          'descriptionIMG' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thu mua',
                                          'linkTitle' => route('blog_true'),
-                                         'title' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thu mua',
+                                         'title' => 'Chia sẻ phần mềm tạo bài test nhân viên QC chuyên nghiệp nhất',
                                          'description' =>  'Khi tuyển dụng, không ít nhà quản lý cho ứng viên làm các bài test chuyên môn và test tính cách để đánh giá năng lực của nhân viên, nhằm chọn ra nhân viên phù hợp với vị trí đang tuyển dụng. Vị trí nhân viên thu mua cũng không phải là ngoại lệ. ',
                                          'linkButton' => route('blog')
                                      ])
+                                @include('components.owl_items',[
+                                    'link' => route('blog_true'),
+                                    'img' => asset('image/resources/batchsale-3701777_1920.jpeg'),
+                                    'descriptionIMG' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thủ kho￼',
+                                    'linkTitle' => route('blog_true'),
+                                    'title' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thủ kho￼',
+                                    'description' => 'Bạn đang chuẩn bị phỏng vấn ứng viên và cảm thấy bối bối, không biết bài test nhân viên thủ kho như thế nào. Nhưng đừng quá lo lắng, trong bài viết dưới đây, Testcenter sẽ chia sẻ với bạn những thông tin hữu ích để có thể thực hiện phỏng vấn vị trí nhân viên kho một cách tốt nhất.',
+                                    'linkButton' => route('blog')
+                                ])
                             </div>
                         </div>
                     </div>

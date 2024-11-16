@@ -10,7 +10,9 @@
             </div>
             <div class="item-detail">
                 <div class="title-mb2">
-                    <a href="{{route('blog_equity')}}">{{$title}}</a>
+                    <h3>
+                        <a href="{{route('blog_equity')}}">{{$title}}</a>
+                    </h3>
                 </div>
                 <div class="button-link">
                     <a target="_blank" href="{{route('news')}}"

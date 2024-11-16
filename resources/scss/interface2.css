@@ -113,6 +113,14 @@
   background-repeat: no-repeat;
 }
 
+.box-container {
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.04);
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
 .button-group {
   column-gap: 10px;
 }
@@ -271,15 +279,16 @@
   font-weight: 400;
 }
 
-.owl-item .card {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.02) !important;
-  padding: 2px !important;
-}
 .owl-item .card-item {
   box-shadow: none;
   padding: 0;
   border-color: #EEEEEE;
   font-weight: 400;
+}
+
+.owl-carousel-latest-news .card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.02) !important;
+  padding: 2px !important;
 }
 
 .short-post {

@@ -5,10 +5,23 @@
             <a href="#" class="nav-link">Trang chủ</a>>
             <a>Tin tức</a>
         </div>
-        <div class="button-selection">
-            <a class="mb-2 text-white btn btn-dark" style="font-size: 9px;width: 10%">Mới nhất</a>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <button class="dropdown-button">
+                    MỚI NHẤT
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#">Mới nhất</a>
+                    <a href="#">Tin tiêu biểu</a>
+                    <a href="#">Phổ biến nhất</a>
+                    <a href="#">Xem nhiều theo tuần</a>
+                    <a href="#">Bảng Điểm Đánh Giá</a>
+                    <a href="#">Ngẫu nhiên</a>
+                </div>
+            </div>
         </div>
-        <h1>Mẫu đề Test Online</h1>
+        <h1 class="td-page-title">Mẫu đề Test Online</h1>
         <div class="description">
             <p>Testcenter cung cấp hệ thống và mẫu đề test online giúp doanh nghiệp và ứng viên đánh giá tính cách, tư duy, khả năng tính toán thông qua bài test IQ, EQ, MBTI, DISC và đề thi TOEIC,… </p>
         </div>

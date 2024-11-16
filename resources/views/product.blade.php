@@ -261,8 +261,8 @@
             </h4>
             <div class="row">
                 <div class="col-md-3 col-12 product-section-price-box product-section-price-box-primary"
-                     style="height: 1029.52px;">
-                    <div class="product-section-price-box-header" style="height:161.562px;">
+                     style="height:1066.03px;">
+                    <div class="product-section-price-box-header" style="height:197.597px;">
                         <img src="{{asset('image/product/diamond-1.png')}}">
                         <p class="text-uppercase mt-2 font-weight-500">Free</p>
                         <h3 class="font-weight-bold">Miễn phí</h3>
@@ -299,7 +299,7 @@
                     </p>
                     <a href="{{route('register')}}" class="btn btn-register btn-light">Đăng ký miễn phí</a>
                 </div>
-                <div class="col-md-2 col-12 product-section-price-box" style="height: 1029.52px;">
+                <div class="col-md-2 col-12 product-section-price-box" style="height: 1066.03px;">
                     @include('components.product_price_box',[
                       'img' => asset('image/product/diamond-2.png'),
                       'status' => 'STARTER',
@@ -339,7 +339,7 @@
                     </p>
                     <a href="{{route('register')}}" class="btn btn-register btn-secondary">Trải nghiệm ngay</a>
                 </div>
-                <div class="col-md-2 col-12 product-section-price-box" style="height: 1029.52px;">
+                <div class="col-md-2 col-12 product-section-price-box" style="height: 1066.03px;">
                     @include('components.product_price_box',[
                           'img' => asset('image/product/diamond-3.png'),
                           'status' => 'BUSINESS',
@@ -379,7 +379,7 @@
                     </p>
                     <a href="{{route('register')}}" class="btn btn-register btn-secondary">Trải nghiệm ngay</a>
                 </div>
-                <div class="col-md-2 col-12 product-section-price-box" style="height: 1029.52px;">
+                <div class="col-md-2 col-12 product-section-price-box" style="height: 1066.03px;">
                     @include('components.product_price_box',[
                          'img' => asset('image/product/diamond-4.png'),
                          'status' => 'BUSINESS PLUS',
@@ -424,7 +424,7 @@
                     </p>
                     <a href="{{route('register')}}" class="btn btn-register btn-secondary">Trải nghiệm ngay</a>
                 </div>
-                <div class="col-md-2 col-12 product-section-price-box" style="height: 1029.52px;">
+                <div class="col-md-2 col-12 product-section-price-box" style="height: 1066.03px;">
                     @include('components.product_price_box',[
                          'img' => asset('image/product/diamond-5.png'),
                          'status' => 'ENTERPRISE',

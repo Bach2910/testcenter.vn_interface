@@ -5,12 +5,25 @@
             <a href="#" class="nav-link">Trang chủ</a>>
             <a>Nhân sự</a>
         </div>
-        <div class="button-selection">
-            <a class="mb-2 text-white btn btn-dark" style="font-size: 9px;width: 10%">Mới nhất</a>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <button class="dropdown-button">
+                    MỚI NHẤT
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#">Mới nhất</a>
+                    <a href="#">Tin tiêu biểu</a>
+                    <a href="#">Phổ biến nhất</a>
+                    <a href="#">Xem nhiều theo tuần</a>
+                    <a href="#">Bảng Điểm Đánh Giá</a>
+                    <a href="#">Ngẫu nhiên</a>
+                </div>
+            </div>
         </div>
-        <h1>Nhân sự</h1>
+        <h1 class="td-page-title">Nhân sự</h1>
         <div class="description">
-            <p class="text-center">Nắm bắt tâm lý nhân viên, thấu hiểu thị trường lao động và cập nhật những xu hướng quản trị nhân sự mới<br> sẽ mở ra cho doanh nghiệp “cánh cửa” chào đón nhân tài. </p>
+            <p>Nắm bắt tâm lý nhân viên, thấu hiểu thị trường lao động và cập nhật những xu hướng quản trị nhân sự mới sẽ mở ra cho doanh nghiệp “cánh cửa” chào đón nhân tài. </p>
         </div>
     </div>
     <div class="td-main-content-wrap td-container-wrap">

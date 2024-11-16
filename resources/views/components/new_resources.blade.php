@@ -2,14 +2,16 @@
     <div class="dad">
         <div class="img-wrapper">
             <a href="{{route('blog_micromanagement')}}">
-            <img
-                src="{{$img}}"
-                class="img-fluid animation" alt="Micromanagement image">
+                <img
+                    src="{{$img}}"
+                    class="img-fluid animation" alt="Micromanagement image">
             </a>
         </div>
         <div class="item-detail">
             <div class="title-mb2">
-                <a href="{{route('blog_micromanagement')}}">{{$title}}</a>
+                <h3>
+                    <a href="{{route('blog_micromanagement')}}">{{$title}}</a>
+                </h3>
             </div>
             <div class="button-link">
                 <a href="{{route('blog_micromanagement')}}" target="_blank" type="button"
