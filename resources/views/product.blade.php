@@ -94,7 +94,7 @@
                                 nhau.</p>
                         </li>
                         <li>
-                            <p>Đào tạo nhân viên chưa đúng mục đích</p>
+                            <p style="list-style-type: disc">Đào tạo nhân viên chưa đúng mục đích</p>
                             <p class="text-normal">Khó khăn trong đào tạo nhân viên vì không nắm rõ điểm mạnh và điểm
                                 yếu của từng cá nhân</p>
                         </li>
@@ -115,7 +115,8 @@
                 <img alt="Công cụ test online" src="https://www.testcenter.vn/images/products/group-1.png"
                      class="product-feature-image mobile-hidden pc-show"/>
                 <div class="d-flex justify-content-center mobile-show pc-hidden text-center-mobile">
-                    <img class="img-fluid" alt="Công cụ test online" src="images/products/image-function-mobile.png"/>
+                    <img class="img-fluid" alt="Công cụ test online"
+                         src="{{asset('image/product/image-function-mobile.png')}}"/>
                 </div>
             </div>
             <div class="col-md-7 product-section-function-right">
@@ -142,7 +143,7 @@
                     'title' => 'Thống kê kết quả trực quan',
                     'description' => 'Kết quả được biểu thị thông qua nhiều loại biểu đồ khác nhau kết hợp với số liệu cụ thể.'
                 ])
-                <div class="d-flex justify-content-start ">
+                <div class="d-flex justify-content-start">
                     <a class="btn btn-primary btn-register" href="https://app.testcenter.vn/register/?source=web">Đăng
                         ký miễn phí</a>
                 </div>
@@ -153,6 +154,7 @@
         <p class="product-section-title mb-2 mt-4">Advantage</p>
         <div class="mb-4 text-center pl-4 pr-4">
             <h4 class="font-weight-bold mb-2 mobile-hidden pc-show">Ưu điểm vượt trội của TestCenter.vn</h4>
+            <h5 class="font-weight-bold mb-2 mobile-show pc-hidden">Ưu điểm vượt trội của TestCenter.vn</h5>
             <p>Số hóa quy trình đánh giá năng lực nhân viên của Doanh nghiệp Việt Nam</p>
         </div>
         <div class="row product-section-advantage-box"
@@ -188,8 +190,11 @@
                 <img alt="Giải pháp test online" src="{{asset('image/product/group-2.png')}}"
                      style="width: 100%;"/>
             </div>
+            <div
+                class="col-md-6 mobile-show pc-hidden d-flex align-items-center text-center-mobile justify-content-center">
+                <img alt="Giải pháp test online" src="{{asset('image/product/group-2.png')}}" class="img-fluid"/>
+            </div>
         </div>
-
         <div class="row mt-4 product-section-advantage-box"
              style="background: linear-gradient(180deg, #F3F9FF 0%, #EDFBF3 100%);">
             <div class="col-md-6 mobile-hidden pc-show">
@@ -216,8 +221,10 @@
                     ])
 
             </div>
+            <div class="col-md-6 mobile-show pc-hidden">
+                <img alt="Số hóa quy trình đánh giá nhân sự" src="{{asset('image/product/group-3.png')}}" style="width: 100%;">
+            </div>
         </div>
-
         <div class="row mt-4 product-section-advantage-box"
              style="background: linear-gradient(180deg, #FFF9F3 0%, #E8EEFF 100%);">
             <div class="col-md-6 p-4">
@@ -242,6 +249,9 @@
             <div class="col-md-6 mobile-hidden pc-show" style="padding-right: 0;">
                 <img alt="Thống kê kết quả trực quan" src="{{asset('image/product/group-4.png')}}"
                      style="width: 100%;"/>
+            </div>
+            <div class="col-md-6 mobile-show pc-hidden">
+                <img alt="Số hóa quy trình đánh giá nhân sự" src="{{asset('image/product/group-4.png')}}" style="width: 100%;">
             </div>
         </div>
         <div class="d-flex justify-content-center mt-4">
@@ -502,10 +512,12 @@
                             'description' => 'Chỉ thêm vài bước nhỏ trong quá trình tuyển dụng, ứng viên có thể thấy được sự chuyên nghiệp và chỉn chu trong từng hoạt động của doanh nghiệp.'
                         ])
                     </div>
-                    <div class="col-md-5 align-items-center d-flex p-0 product-section-problem-left mobile-hidden pc-show">
+                    <div
+                        class="col-md-5 align-items-center d-flex p-0 product-section-problem-left mobile-hidden pc-show">
                         <img src="{{asset('image/product/benefit.png')}}" class="img-fluid" alt>
                     </div>
-                    <div class="col-md-5 align-items-center d-flex p-0 product-section-problem-left mobile-show pc-hidden pr-5 pl-5">
+                    <div
+                        class="col-md-5 align-items-center d-flex p-0 product-section-problem-left mobile-show pc-hidden pr-5 pl-5">
                         <img src="{{asset('image/product/benefit.png')}}" class="img-fluid" alt>
                     </div>
                 </div>

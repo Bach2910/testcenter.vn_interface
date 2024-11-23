@@ -83,6 +83,14 @@ class InterFaceController extends \App\Http\Controllers\Controller
     {
         return view('footer_pages.exam_test');
     }
+    public function evaluate()
+    {
+        return view('footer_pages.evaluate');
+    }
+    public function trainEmployee()
+    {
+        return view('footer_pages.train_employee');
+    }
     public function paginate($data, $viewName, $variableName = 'articles')
     {
         $paginate = collect($data);

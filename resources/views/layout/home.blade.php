@@ -129,12 +129,12 @@
                             </a>
                         </p>
                         <p>
-                            <a target="_blank" href="" class="text-sm text-light link-item">
+                            <a target="_blank" href="{{route('evaluate')}}" class="text-sm text-light link-item">
                                 Đánh giá năng lực nhân sự
                             </a>
                         </p>
                         <p>
-                            <a target="_blank" href="" class="text-sm text-light link-item">
+                            <a target="_blank" href="{{route('trainEmployee')}}" class="text-sm text-light link-item">
                                 Đào tạo nhân sự hiệu quả
                             </a>
                         </p>

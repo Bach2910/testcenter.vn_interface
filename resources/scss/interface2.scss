@@ -8,7 +8,6 @@
     background-position-x: 50px;
     background-position-y: 16px;
 }
-
 .body-container {
     background-image: url('/image/card/style.png');
     background-size: contain;
@@ -67,19 +66,16 @@
 .about-us {
     background: linear-gradient(180deg, rgba(197, 232, 250, 0.1) 0%, rgba(237, 248, 255, 0.36) 100%);
 }
-
 .branch-container {
     box-shadow: -1px 10px 20px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
     padding: 30px 88px 30px 88px;
 }
-
 .trial {
     background-image: url('/image/card/image21.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .title {
     color: #2B4AA0;
     font-size: 19px;
@@ -105,14 +101,20 @@
     padding-right: 12px !important;
     display: flex;
 }
+ul{
 
+}
+li {
+    list-style-position: outside!important;
+    list-style-type: disc!important;
+}
 @media (max-width: 575.98px) {
     .box-container {
         box-shadow: none;
         padding: 0px;
     }
     .features-box {
-        background-color: #EDF8FF5C;
+        background-color: white;
     }
     .branch-container {
         padding: 10px 50px 10px 50px;
@@ -150,7 +152,7 @@
         padding: 0px;
     }
     .features-box {
-        background-color: #EDF8FF5C;
+        background-color: white;
     }
     .branch-container {
         padding: 10px 50px 10px 50px;
@@ -171,14 +173,15 @@
     .second-des {
         margin-top: 25px;
     }
+    .justify-content-start{
+        justify-content: center!important;
+    }
 }
-
 .text-about {
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
 }
-
 .owl-item {
     .card-item {
         box-shadow: none;
@@ -221,14 +224,13 @@ li {
     margin: 0;
     overflow: hidden;
 }
-section {
+section{
     scroll-margin-top: 97px;
 }
 
 .main-title-dk {
     font-size: 2.5rem;
 }
-
 .main-title-mb {
     margin-bottom: .5rem;
     font-weight: 500;
@@ -237,6 +239,9 @@ section {
     color: #0a335d !important;
 }
 
+li{
+    line-height: 46px;
+}
 .li-color {
     line-height: 2;
     font-size: 14px;
@@ -256,7 +261,6 @@ section {
         color: black;
     }
 }
-
 .table-content{
     a {
         color: inherit;
@@ -275,8 +279,7 @@ section {
     }
     li{
         background: 0 0;
-        list-style: none;
-        line-height: 1.6;
+        line-height: 1.6!important;
         margin: 0;
         overflow: hidden;
     }

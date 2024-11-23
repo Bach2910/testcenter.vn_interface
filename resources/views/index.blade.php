@@ -400,6 +400,56 @@
                 </div>
             </section>
         </div>
+        <div class="mt-4 newest-posts mobile d-lg-none">
+            <section class="container">
+                <h4 class="text-center">
+                    Bài viết <span style="color: #2B4AA0">mới nhất</span>
+                </h4>
+                <div class="slider-panel-latest-new position-relative mt-3">
+                    @include('components.owl-item-hidden',[
+                                    'link' => route('blog_true'),
+                                    'img' => asset('image/resources/paying-1438142_1920.jpeg'),
+                                    'descriptionIMG' => 'Chia sẻ phần mềm tạo bài test nhân viên QC chuyên nghiệp nhất',
+                                    'linkTitle' => route('blog_true'),
+                                    'title' => 'Chia sẻ phần mềm tạo bài test nhân viên QC chuyên nghiệp nhất',
+                                    'description' => 'Bộ phận QC nói chung và nhân viên QC đóng vai trò khá quan trọng, giúp thúc đẩy sự phát triển của doanh nghiệp, thông qua việc đảm bảo về chất lượng sản phẩm. Vậy, nhân viên QC là gì? Và đâu là phần mềm giúp thực hiện các bài test nhân viên QC hiệu quả. Mời bạn cùng Testcenter khám phá trong bài viết dưới đây nhé.',
+                                    'linkButton' => route('blog')
+                                ])
+                    @include('components.owl-item-hidden',[
+                            'link' => route('blog_true'),
+                            'img' => asset('image/card/iq-va-eq-cai-nao-quan-trong-hon-testcenter.jpg'),
+                            'descriptionIMG' => 'IQ và EQ cái
+                                    nào quan trọng hơn? Chọn yếu tố gì trong tuyển dụng',
+                            'linkTitle' => route('blog_true'),
+                            'title' => 'IQ và EQ cái
+                                    nào quan trọng hơn? Chọn yếu tố gì trong tuyển dụng',
+                            'description' =>  'IQ và EQ đã trở thành hai khái niệm quan trọng trong lĩnh vực tuyển
+                            dụng nhân sự. Tuy vậy, rất nhiều nhà tuyển dụng vẫn phân vân không
+                            biết IQ và EQ cái nào quan trọng hơn trong quá trình đánh giá ứng
+                            viên. Nếu bạn cũng đang tìm hiểu vấn đề IQ và [&hellip;]',
+                            'linkButton' => route('blog')
+                        ])
+                    @include('components.owl-item-hidden',[
+                             'link' => route('blog_true'),
+                             'img' => asset('image/resources/batchbusinesswoman-571153_1920.jpeg'),
+                             'descriptionIMG' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thu mua',
+                             'linkTitle' => route('blog_true'),
+                             'title' => 'Chia sẻ phần mềm tạo bài test nhân viên QC chuyên nghiệp nhất',
+                             'description' =>  'Khi tuyển dụng, không ít nhà quản lý cho ứng viên làm các bài test chuyên môn và test tính cách để đánh giá năng lực của nhân viên, nhằm chọn ra nhân viên phù hợp với vị trí đang tuyển dụng. Vị trí nhân viên thu mua cũng không phải là ngoại lệ. ',
+                             'linkButton' => route('blog')
+                         ])
+                    @include('components.owl-item-hidden',[
+                        'link' => route('blog_true'),
+                        'img' => asset('image/resources/batchsale-3701777_1920.jpeg'),
+                        'descriptionIMG' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thủ kho￼',
+                        'linkTitle' => route('blog_true'),
+                        'title' => 'Giới thiệu phần mềm thông minh tạo bài test nhân viên thủ kho￼',
+                        'description' => 'Bạn đang chuẩn bị phỏng vấn ứng viên và cảm thấy bối bối, không biết bài test nhân viên thủ kho như thế nào. Nhưng đừng quá lo lắng, trong bài viết dưới đây, Testcenter sẽ chia sẻ với bạn những thông tin hữu ích để có thể thực hiện phỏng vấn vị trí nhân viên kho một cách tốt nhất.',
+                        'linkButton' => route('blog')
+                    ])
+                </div>
+            </section>
+        </div>
     </div>
 @endsection
 
